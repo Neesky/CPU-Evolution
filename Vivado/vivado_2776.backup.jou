@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct  5 16:35:52 2021
+# Process ID: 2776
+# Current directory: C:/Users/94582/Documents/GitHub/CPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10656 C:\Users\94582\Documents\GitHub\CPU\Lab_04.xpr
+# Log file: C:/Users/94582/Documents/GitHub/CPU/vivado.log
+# Journal file: C:/Users/94582/Documents/GitHub/CPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+
+open_project C:/Users/94582/Documents/GitHub/CPU/Lab_04.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/94582/Desktop/Lab_04 _3/testbench_behav.wcfg}
+source testbench.tcl
+reset_project
+reset_project
+close_sim
