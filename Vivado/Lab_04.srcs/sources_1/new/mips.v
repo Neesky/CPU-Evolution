@@ -34,16 +34,8 @@ wire pcsrc, zero;
 wire [2:0] alucontrol;
 assign inst_ram_ena = 1'b1;
 
-floprc #(32) sigs_D(
-    .clk(clka), 
-    .rst(rst), 
-    .en(~stallD),
-    .clear(pcsrcD),
-    .d(instr),
-    .q(instrD)
-    );
 wire branch;
-wire stallD, pcsrcD;
+wire stallD;
 controller c(clka, instrD[31:26],instrD[5:0],zero,memtoregE,memtoregM,memtoregW,
     data_ram_wea,pcsrc,alusrc,regdst,regwriteE,regwriteM, regwriteW,jump,data_ram_ena, alucontrol, branch);
     
@@ -61,7 +53,6 @@ datapath datapath(
     .writedataM(mem_wdata),
     .zeroM(zero),
     .stallD(stallD), 
-    .pcsrcD(pcsrcD),
     .jump(jump), 
 //    .beanch(beanch), 
     .alusrc(alusrc), 
