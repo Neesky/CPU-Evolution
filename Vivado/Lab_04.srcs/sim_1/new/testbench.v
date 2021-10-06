@@ -70,16 +70,14 @@ top testtop1(
 //       $display("write2reg£º%b, regwrite: %d, pc: %d, instr: %h, instr[25:21]: %b, instr[20:16]: %b, rd1: %d, alu_srcB: %d",write2reg, regwrite, pc, instr, instr[25:21], instr[20:16], rd1, alu_srcB);
 	   $display("data_ram_wea: %b, alu_result: %d, mem_wdata: %b", data_ram_wea, alu_result, mem_wdata);
 //	   $stop;
-		if(data_ram_wea==1'b1) begin
+		 begin
 			/* code */
 			if(alu_result === 84 & mem_wdata === 7) begin
 				/* code */
-				$display("Simulation succeeded");
-				$stop;
+				$display("OK!*N");
 			end else if(alu_result !== 80) begin
 				/* code */
 				$display("Simulation Failed");
-				$stop;
 			end
 		end
 	end

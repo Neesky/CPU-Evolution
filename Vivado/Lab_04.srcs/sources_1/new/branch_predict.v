@@ -91,7 +91,12 @@ module branch_predict (
             end
         end
         else if(branchM) begin
-            BHT[update_BHT_index] = {BHT[update_BHT_index][1:5],actual_takeM};
+            if(actual_takeM) begin
+                 BHT[update_BHT_index] = BHT[update_BHT_index]<<1 + 1'b1;
+            end
+            else begin
+                 BHT[update_BHT_index] = BHT[update_BHT_index]<<1;
+            end
         end
     end
 // ---------------------------------------BHT初始化以及更新---------------------------------------

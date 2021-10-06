@@ -23,41 +23,39 @@
 module datapath(
     input wire clka,rst, branch, memtoregM,
     input wire [31:0] instr, mem_rdata,
-    output wire zeroM, stallD,
+    output wire zeroM, stallD,flushD,
     output wire [31:0] pc, alu_resultM, writedataM,
     
-    input wire jump, pcsrc, alusrc, memtoregE, memtoregW, regwriteE, regwriteM, regwriteW, regdst,
+    input wire jump, alusrc, memtoregE, memtoregW, regwriteE, regwriteM, regwriteW, regdst,
     input wire [2:0] alucontrol
     );
-wire flushD;
-wire [31:0] pc_plus4, rd1D, rd2D, imm_extend, pc_next, pc_next_jump, instr_sl2;
+wire [31:0] pc_plus4, rd1D, rd2D, imm_extend, pc_next,pc_nextbr, pc_next_jump, instr_sl2;
 wire [31:0] mem_rdata, alu_srcB, wd3, imm_sl2, pc_branchD, pc_branchE,pc_branchM;
 wire [4:0] write2regE, write2regM, write2regW;
 wire [31:0] rd1, rd2, writedataE;
-wire stallF, stallE, flushE;
+wire stallF, stallE, flushE ,flushF;
 
-wire [31:0] instrD, pc_plus4D, rd1E, rd2E, pc_plus4E, imm_extendE, alu_result, alu_resultW, mem_rdataW;
+wire [31:0] instrD, rd1E, rd2E,pc_plus4D, pc_plus4E, pc_plus4M, imm_extendE, alu_result, alu_resultW, mem_rdataW;
 wire [4:0] rsD, rtD, rdD, rsE, rtE, rdE, rtM, rdM, rtW, rdW;
 wire zero;
-wire [31:0] eql1, eql2;
 wire branchD = branch;
 wire branchE,branchM;
-wire pcF = pc;
-wire pcD,pcE,pcM;
-wire actual_takeM = alu_resultM;
-wire pred_takeD;
+wire [31:0] pcF,pcD,pcE,pcM;
+assign pcF = pc;
+wire actual_takeM = zeroM & branchM ;
+wire pred_takeD,pred_takeE,pred_takeM;
 
-
-//pcsrc
-//assign pcsrc = zero & beanch;
-
-//assign mem_wdata = rd2;
-
-    //mux2 for pc_next
-mux2 #(32) mux_pc(
+mux2 #(32) mux_pc1(
     .a(pc_branchD),
     .b(pc_plus4),
     .s(pred_takeD & branchD), //pcsrc
+    .y(pc_nextbr)
+    );
+
+mux2 #(32) mux_pc2(
+    .a(pred_takeM ? pc_plus4M:pc_branchM ),
+    .b(pc_nextbr),
+    .s(branchM & (pred_takeM != actual_takeM)), //pcsrc
     .y(pc_next)
     );
     
@@ -119,7 +117,7 @@ floprc #(32) pc_D(
     .d(pcF),
     .q(pcD)
     );
-floprc #(32) branch_D(
+floprc #(1) branch_D(
     .clk(clka), 
     .rst(rst),
     .en(~stallD), 
@@ -225,13 +223,21 @@ floprc #(32) pc_E(
     .d(pcD),
     .q(pcE)
     );
-floprc #(32) branch_E(
+floprc #(1) branch_E(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
     .clear(flushE),
     .d(branchD),
     .q(branchE)
+    );
+floprc #(1) pred_take_E(
+    .clk(clka), 
+    .rst(rst), 
+    .en(1'b1), 
+    .clear(flushE),
+    .d(pred_takeD),
+    .q(pred_takeE)
     );
     
     //mux2 for wd3, write addr port of regfile
@@ -286,7 +292,7 @@ floprc #(32) writedata_M(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(writedataE),
     .q(writedataM)
     );    
@@ -295,7 +301,7 @@ floprc #(32) r10M(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(alu_result),
     .q(alu_resultM)
     );
@@ -304,16 +310,16 @@ floprc #(1) r11M(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(zero),
     .q(zeroM)
     );
     
-floprc #(32) r12M(
+floprc #(5) r12M(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(write2regE),
     .q(write2regM)
     );
@@ -322,7 +328,7 @@ floprc #(32) r13M(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(pc_branchD),
     .q(pc_branchE)
     );
@@ -333,7 +339,7 @@ floprc #(5) r7M(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(rdE),
     .q(rdM)
     );
@@ -343,7 +349,7 @@ floprc #(32) r13W(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(alu_resultM),
     .q(alu_resultW)
     );
@@ -352,7 +358,7 @@ floprc #(32) r14W(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(mem_rdata),
     .q(mem_rdataW)
     );
@@ -361,7 +367,7 @@ floprc #(5) r6W(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(write2regM),
     .q(write2regW)
     );
@@ -369,19 +375,42 @@ floprc #(32) pc_M(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(pcE),
     .q(pcM)
     );    
-floprc #(32) branch_M(
+floprc #(1) branch_M(
     .clk(clka), 
     .rst(rst), 
     .en(1'b1), 
-    .clear(1'b0),
+    .clear((branchM & (actual_takeM!=pred_takeM))),
     .d(branchE),
     .q(branchM)
     ); 
-    
+floprc #(1) pred_take_M(
+    .clk(clka), 
+    .rst(rst), 
+    .en(1'b1), 
+    .clear((branchM & (actual_takeM!=pred_takeM))),
+    .d(pred_takeE),
+    .q(pred_takeM)
+    );     
+floprc #(32) pc_plus4_M(
+    .clk(clka), 
+    .rst(rst), 
+    .en(1'b1), 
+    .clear((branchM & (actual_takeM!=pred_takeM))),
+    .d(pc_plus4E),
+    .q(pc_plus4M)
+    );   
+floprc #(32) pc_branch_M(
+    .clk(clka), 
+    .rst(rst), 
+    .en(1'b1), 
+    .clear((branchM & (actual_takeM!=pred_takeM))),
+    .d(pc_branchE),
+    .q(pc_branchM)
+    );   
     //mux2 for wd3, write data port of regfile
 mux2 #(32) mux_wd3(
     .a(mem_rdataW),
@@ -415,8 +444,13 @@ hazard hazard(
     .forwardBD(forwardBD),
     .stallF(stallF), 
     .stallD(stallD), 
-    .flushE(flushE)
-
+    .flushE(flushE),
+    .flushD(flushD),
+    .flushF(flushF),
+    .actual_takeM(actual_takeM),
+    .branchM(branchM),
+    .pred_takeM(pred_takeM),
+    .pred_takeD(pred_takeD)
 );
     
 branch_predict bp(
@@ -437,20 +471,20 @@ branch_predict bp(
 );
     
     
-    always @(*) begin
-        $display("clka:%b $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$",clka);
-        $display("datapath, write2reg£º%b, regwrite: %d, pc: %h, instr: %h, instr[25:21]: %b, instr[20:16]: %b, rd1D: %d, rd1E: %d, alu_srcB: %d, alucontrol:%b, alu_result:%d,memtorg:%b, wd3:%d",write2regE, regwriteE, pc, instrD, instrD[25:21], instrD[20:16], rd1D, rd1E, alu_srcB, alucontrol, alu_resultW, memtoregW, wd3);
-        $display("datapath, rd1D:%d,forwardAD:%d,rd2D:%d,forwardBD:%d,alu_resultM:%d, eql1:%d,eql2:%d,branch:%d",rd1D,forwardAD,rd2D,forwardBD,alu_resultM,eql1,eql2,branchD);
-        $display("datapath,  pc_next:%h,pc_branchE:%h, jump:%b,pc_jump:%h, pc_next_jump:%h",  pc_next,pc_branchE, jump,{pc_plus4[31:28],instr_sl2[27:0]}, pc_next_jump);
-        $display("datapath, pc_branchD:%h, pc_plus4E:%d, imm_sl2:%d",pc_branchD, pc_plus4E, imm_sl2);
-        $display("rsD:%d, rtD:%d, rsE:%d, rtE:%d, writeregE:%d, writeregM:%d, writeregW:%d,",instrD[25:21], rtD, rsE, rtE, write2regE, write2regM, write2regW);
-        $display("regwriteE:%d, regwriteM:%d, regwriteW:%d, memtoregE:%d, branchD:%d",regwriteE, regwriteM, regwriteW, memtoregE, branchD);
-        $display("~stallF:%b,pc:%h,instr:%h,instrD:%h",~stallF,pc,instr, instrD);
-        $display("pc_plus4:%h,pc_plus4D:%h",pc_plus4, pc_plus4D);
-        $display("rd1D:%d,rd1E:%d",rd1D, rd1E);
-        $display("rd2D:%d,rd2E:%d",rd2D, rd2E);
+//    always @(*) begin
+//        $display("clka:%b $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$",clka);
+//        $display("datapath, write2reg£º%b, regwrite: %d, pc: %h, instr: %h, instr[25:21]: %b, instr[20:16]: %b, rd1D: %d, rd1E: %d, alu_srcB: %d, alucontrol:%b, alu_result:%d,memtorg:%b, wd3:%d",write2regE, regwriteE, pc, instrD, instrD[25:21], instrD[20:16], rd1D, rd1E, alu_srcB, alucontrol, alu_resultW, memtoregW, wd3);
+//        $display("datapath, rd1D:%d,forwardAD:%d,rd2D:%d,forwardBD:%d,alu_resultM:%d, eql1:%d,eql2:%d,branch:%d",rd1D,forwardAD,rd2D,forwardBD,alu_resultM,eql1,eql2,branchD);
+//        $display("datapath,  pc_next:%h,pc_branchE:%h, jump:%b,pc_jump:%h, pc_next_jump:%h",  pc_next,pc_branchE, jump,{pc_plus4[31:28],instr_sl2[27:0]}, pc_next_jump);
+//        $display("datapath, pc_branchD:%h, pc_plus4E:%d, imm_sl2:%d",pc_branchD, pc_plus4E, imm_sl2);
+//        $display("rsD:%d, rtD:%d, rsE:%d, rtE:%d, writeregE:%d, writeregM:%d, writeregW:%d,",instrD[25:21], rtD, rsE, rtE, write2regE, write2regM, write2regW);
+//        $display("regwriteE:%d, regwriteM:%d, regwriteW:%d, memtoregE:%d, branchD:%d",regwriteE, regwriteM, regwriteW, memtoregE, branchD);
+//        $display("~stallF:%b,pc:%h,instr:%h,instrD:%h",~stallF,pc,instr, instrD);
+//        $display("pc_plus4:%h,pc_plus4D:%h",pc_plus4, pc_plus4D);
+//        $display("rd1D:%d,rd1E:%d",rd1D, rd1E);
+//        $display("rd2D:%d,rd2E:%d",rd2D, rd2E);
         
-    end
+//    end
     
 
 endmodule

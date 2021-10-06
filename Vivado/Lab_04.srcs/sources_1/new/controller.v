@@ -25,7 +25,7 @@ module controller(
 	input wire[5:0] op,funct,
 	input wire zero,
 	output wire memtoregE, memtoregM, memtoregW,memwrite,
-	output wire pcsrc,alusrc,
+	output wire alusrc,
 	output wire regdst,regwriteE,regwriteM, regwriteW,
 	output wire jump, memen,
 	output wire[2:0] alucontrolE,
@@ -103,7 +103,6 @@ module controller(
 //    assign regdst = sigsW[1];
     
 
-	assign pcsrc = branch & zero;
 	always @(posedge clka) begin
 	   $display("controller,regwriteD:%b,regwriteE:%b,regwriteM:%b,regwriteW:%b, alucontrolE:%b",sigs[0], sigsE[0], sigsM[0], regwriteW, alucontrolD );
 	   $display("controller, funct:%b,aluop:%b,alucontrolD:%b", funct,aluop,alucontrolD);

@@ -30,21 +30,28 @@ module mips(
     
 wire memtoregE,memtoregM, memtoregW, regwriteE;
 wire [31:0] instrD;
-wire pcsrc, zero;
+wire zero;
+wire stallD,flushD;
 wire [2:0] alucontrol;
 assign inst_ram_ena = 1'b1;
-
+floprc #(32) sigs_D(
+    .clk(clka), 
+    .rst(rst), 
+    .en(~stallD),
+    .clear(flushD),
+    .d(instr),
+    .q(instrD)
+    );
 wire branch;
-wire stallD;
+
 controller c(clka, instrD[31:26],instrD[5:0],zero,memtoregE,memtoregM,memtoregW,
-    data_ram_wea,pcsrc,alusrc,regdst,regwriteE,regwriteM, regwriteW,jump,data_ram_ena, alucontrol, branch);
+    data_ram_wea,alusrc,regdst,regwriteE,regwriteM, regwriteW,jump,data_ram_ena, alucontrol, branch);
     
 datapath datapath(
     .clka(clka),
     .rst(rst),
     .branch(branch),
     .memtoregM(memtoregM),
-    .pcsrc(pcsrc),
     .instr(instr),
     .mem_rdata(mem_rdata),
     .pc(pc), 
@@ -53,6 +60,7 @@ datapath datapath(
     .writedataM(mem_wdata),
     .zeroM(zero),
     .stallD(stallD), 
+    .flushD(flushD),
     .jump(jump), 
 //    .beanch(beanch), 
     .alusrc(alusrc), 

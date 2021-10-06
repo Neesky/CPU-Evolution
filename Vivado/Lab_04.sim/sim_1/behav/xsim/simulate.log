@@ -3,2011 +3,447 @@ Time resolution is 1 ps
  Block Memory Generator module loading initial data...
  Block Memory Generator data initialization complete.
 Block Memory Generator module testbench.testtop1.inst_ram.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-Block Memory Generator module testbench.testtop1.data_ram.inst.native_mem_module.blk_mem_gen_v8_4_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
-clka:x $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£ºxxxxx, regwrite: x, pc: xxxxxxxx, instr: xxxxxxxx, instr[25:21]: xxxxx, instr[20:16]: xxxxx, rd1D:          x, rd1E:          x, alu_srcB:          x, alucontrol:xxx, alu_result:         x,memtorg:x, wd3:         x
-datapath, rd1D:         x,forwardAD:x,rd2D:         x,forwardBD:x,alu_resultM:         x, eql1:         x,eql2:         x,branch:x,pcsrc:x
-datapath, pcsrc:x, pc_next:xxxxxxxx,pc_branchM:xxxxxxxx, jump:x,pc_jump:xxxxxxxX, pc_next_jump:xxxxxxxx
-datapath, pc_branch:xxxxxxxx, pc_plus4E:         x, imm_sl2:         X
-rsD: x, rtD: x, rsE: x, rtE: x, writeregE: x, writeregM: x, writeregW: x,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:x
-~stallF:x,pc:xxxxxxxx,instr:xxxxxxxx,instrD:xxxxxxxx
-pc_plus4:xxxxxxxx,pc_plus4D:xxxxxxxx
-rd1D:         x,rd1E:         x
-rd2D:         x,rd2E:         x
-clka:x $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£ºxxxxx, regwrite: x, pc: xxxxxxxx, instr: xxxxxxxx, instr[25:21]: xxxxx, instr[20:16]: xxxxx, rd1D:          x, rd1E:          x, alu_srcB:          x, alucontrol:xxx, alu_result:         x,memtorg:x, wd3:         x
-datapath, rd1D:         x,forwardAD:x,rd2D:         x,forwardBD:x,alu_resultM:         x, eql1:         x,eql2:         x,branch:x,pcsrc:x
-datapath, pcsrc:x, pc_next:xxxxxxxx,pc_branchM:xxxxxxxx, jump:x,pc_jump:xxxxxxxX, pc_next_jump:xxxxxxxx
-datapath, pc_branch:xxxxxxxx, pc_plus4E:         x, imm_sl2:         X
-rsD: x, rtD: x, rsE: x, rtE: x, writeregE: x, writeregM: x, writeregW: x,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:x
-~stallF:x,pc:xxxxxxxx,instr:00000000,instrD:xxxxxxxx
-pc_plus4:xxxxxxxx,pc_plus4D:xxxxxxxx
-rd1D:         x,rd1E:         x
-rd2D:         x,rd2E:         x
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£ºxxxxx, regwrite: x, pc: xxxxxxxx, instr: xxxxxxxx, instr[25:21]: xxxxx, instr[20:16]: xxxxx, rd1D:          x, rd1E:          x, alu_srcB:          x, alucontrol:xxx, alu_result:         x,memtorg:x, wd3:         x
-datapath, rd1D:         x,forwardAD:x,rd2D:         x,forwardBD:x,alu_resultM:         x, eql1:         x,eql2:         x,branch:x,pcsrc:x
-datapath, pcsrc:x, pc_next:xxxxxxxx,pc_branchM:xxxxxxxx, jump:x,pc_jump:xxxxxxxX, pc_next_jump:xxxxxxxx
-datapath, pc_branch:xxxxxxxx, pc_plus4E:         x, imm_sl2:         X
-rsD: x, rtD: x, rsE: x, rtE: x, writeregE: x, writeregM: x, writeregW: x,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:x
-~stallF:x,pc:xxxxxxxx,instr:00000000,instrD:xxxxxxxx
-pc_plus4:xxxxxxxx,pc_plus4D:xxxxxxxx
-rd1D:         x,rd1E:         x
-rd2D:         x,rd2E:         x
 mips,data_ram_wea:x,alu_result:         x, mem_wdata:         x
 controller,regwriteD:x,regwriteE:x,regwriteM:x,regwriteW:x, alucontrolE:xxx
 controller, funct:xxxxxx,aluop:xx,alucontrolD:xxx
 alu_dec, alucontrol:xxx
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: x, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          x, alucontrol:xxx, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:x,rd2D:         0,forwardBD:x,alu_resultM:         0, eql1:         0,eql2:         0,branch:x,pcsrc:x
-datapath, pcsrc:x, pc_next:xxxxxxxx,pc_branchM:00000000, jump:x,pc_jump:00000000, pc_next_jump:xxxxxxxx
-datapath, pc_branch:xxxxxxxx, pc_plus4E:         0, imm_sl2:         X
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:x
-~stallF:x,pc:00000000,instr:00000000,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:x,alu_result:         0, mem_wdata:         0
 regfile, we3:x, wd3:00000000000000000000000000000000, rf[ 0]:         x, rf[5]:         x, rf[2]:         x, rf[3]:         x,rf[4]:         x,rf[7]:         x
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: x, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:xxx, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:x,rd2D:         0,forwardBD:x,alu_resultM:         0, eql1:         0,eql2:         0,branch:x,pcsrc:x
-datapath, pcsrc:x, pc_next:xxxxxxxx,pc_branchM:00000000, jump:x,pc_jump:00000000, pc_next_jump:xxxxxxxx
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:x
-~stallF:x,pc:00000000,instr:00000000,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: x, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:xxx, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:x,rd2D:         0,forwardBD:x,alu_resultM:         0, eql1:         0,eql2:         0,branch:x,pcsrc:x
-datapath, pcsrc:x, pc_next:0000000X,pc_branchM:00000000, jump:x,pc_jump:00000000, pc_next_jump:0000000X
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:x
-~stallF:x,pc:00000000,instr:00000000,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: x, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:xxx, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:x,pcsrc:x
-datapath, pcsrc:x, pc_next:0000000X,pc_branchM:00000000, jump:x,pc_jump:00000000, pc_next_jump:0000000X
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:x
-~stallF:x,pc:00000000,instr:00000000,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 alu_dec, alucontrol:000
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: x, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:xxx, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000000X,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:0000000X
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:0
-~stallF:x,pc:00000000,instr:00000000,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 hazard,lwstall:x,branch_stall:0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: x, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:xxx, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:0
-~stallF:x,pc:00000000,instr:00000000,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 data_ram_wea: x, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: x, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:xxx, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:0
-~stallF:x,pc:00000000,instr:00000000,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:x,alu_result:         0, mem_wdata:         0
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: x, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:xxx, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:0
-~stallF:x,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: x, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:xxx, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:x, regwriteM:x, regwriteW:x, memtoregE:x, branchD:0
-~stallF:x,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:x,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:x,regwriteM:x,regwriteW:x, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:x, regwriteW:x, memtoregE:0, branchD:0
-~stallF:x,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 hazard,lwstall:0,branch_stall:0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:x, regwriteW:x, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 data_ram_wea: x, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:x, regwriteW:x, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:x,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:x, regwriteW:x, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:x,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:x,regwriteW:x, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:x, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:x, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:x, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:x, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:x, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
 regfile, we3:1, wd3:00000000000000000000000000000000, rf[ 0]:         0, rf[5]:         x, rf[2]:         x, rf[3]:         x,rf[4]:         x,rf[7]:         x
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000000, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000000,instr:20020005,instrD:00000000
-pc_plus4:00000004,pc_plus4D:00000000
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
 alu_dec, alucontrol:000
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000004, instr: 20020005, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000004,pc_branchM:00000000, jump:0,pc_jump:00080014, pc_next_jump:00000004
-datapath, pc_branch:00000004, pc_plus4E:         0, imm_sl2:         0
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000004,instr:20020005,instrD:20020005
-pc_plus4:00000008,pc_plus4D:00000004
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000004, instr: 20020005, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000008,pc_branchM:00000000, jump:0,pc_jump:00080014, pc_next_jump:00000008
-datapath, pc_branch:00000018, pc_plus4E:         0, imm_sl2:        20
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000004,instr:20020005,instrD:20020005
-pc_plus4:00000008,pc_plus4D:00000004
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         0
 alu_dec, alucontrol:000
 alu_dec, alucontrol:010
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000004, instr: 20020005, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000008,pc_branchM:00000000, jump:0,pc_jump:00080014, pc_next_jump:00000008
-datapath, pc_branch:00000018, pc_plus4E:         0, imm_sl2:        20
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000004,instr:20020005,instrD:20020005
-pc_plus4:00000008,pc_plus4D:00000004
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000004, instr: 20020005, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000008,pc_branchM:00000000, jump:0,pc_jump:00080014, pc_next_jump:00000008
-datapath, pc_branch:00000018, pc_plus4E:         0, imm_sl2:        20
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000004,instr:2003000c,instrD:20020005
-pc_plus4:00000008,pc_plus4D:00000004
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000004, instr: 20020005, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000008,pc_branchM:00000000, jump:0,pc_jump:00080014, pc_next_jump:00000008
-datapath, pc_branch:00000018, pc_plus4E:         0, imm_sl2:        20
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000004,instr:2003000c,instrD:20020005
-pc_plus4:00000008,pc_plus4D:00000004
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:010
 controller, funct:000101,aluop:00,alucontrolD:010
 alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000008, instr: 2003000c, instr[25:21]: 00000, instr[20:16]: 00011, rd1D:          0, rd1E:          0, alu_srcB:          5, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000008,pc_branchM:00000018, jump:0,pc_jump:000c0030, pc_next_jump:00000008
-datapath, pc_branch:0000001c, pc_plus4E:         4, imm_sl2:        20
-rsD: 0, rtD: 3, rsE: 0, rtE: 2, writeregE: 2, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000008,instr:2003000c,instrD:2003000c
-pc_plus4:0000000c,pc_plus4D:00000008
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         x
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000008, instr: 2003000c, instr[25:21]: 00000, instr[20:16]: 00011, rd1D:          0, rd1E:          0, alu_srcB:          5, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000000c,pc_branchM:00000018, jump:0,pc_jump:000c0030, pc_next_jump:0000000c
-datapath, pc_branch:00000038, pc_plus4E:         4, imm_sl2:        48
-rsD: 0, rtD: 3, rsE: 0, rtE: 2, writeregE: 2, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000008,instr:2003000c,instrD:2003000c
-pc_plus4:0000000c,pc_plus4D:00000008
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         x
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000008, instr: 2003000c, instr[25:21]: 00000, instr[20:16]: 00011, rd1D:          0, rd1E:          0, alu_srcB:          5, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000000c,pc_branchM:00000018, jump:0,pc_jump:000c0030, pc_next_jump:0000000c
-datapath, pc_branch:00000038, pc_plus4E:         4, imm_sl2:        48
-rsD: 0, rtD: 3, rsE: 0, rtE: 2, writeregE: 2, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000008,instr:2003000c,instrD:2003000c
-pc_plus4:0000000c,pc_plus4D:00000008
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         x
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000008, instr: 2003000c, instr[25:21]: 00000, instr[20:16]: 00011, rd1D:          0, rd1E:          0, alu_srcB:          5, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000000c,pc_branchM:00000018, jump:0,pc_jump:000c0030, pc_next_jump:0000000c
-datapath, pc_branch:00000038, pc_plus4E:         4, imm_sl2:        48
-rsD: 0, rtD: 3, rsE: 0, rtE: 2, writeregE: 2, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000008,instr:2067fff7,instrD:2003000c
-pc_plus4:0000000c,pc_plus4D:00000008
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         x
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000008, instr: 2003000c, instr[25:21]: 00000, instr[20:16]: 00011, rd1D:          0, rd1E:          0, alu_srcB:          5, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000000c,pc_branchM:00000018, jump:0,pc_jump:000c0030, pc_next_jump:0000000c
-datapath, pc_branch:00000038, pc_plus4E:         4, imm_sl2:        48
-rsD: 0, rtD: 3, rsE: 0, rtE: 2, writeregE: 2, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000008,instr:2067fff7,instrD:2003000c
-pc_plus4:0000000c,pc_plus4D:00000008
-rd1D:         0,rd1E:         0
-rd2D:         x,rd2E:         x
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:010
 controller, funct:001100,aluop:00,alucontrolD:010
 alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00011, regwrite: 1, pc: 0000000c, instr: 2067fff7, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:          x, rd1E:          0, alu_srcB:         12, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         5, eql1:         x,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000000c,pc_branchM:00000038, jump:0,pc_jump:019fffdc, pc_next_jump:0000000c
-datapath, pc_branch:0000003c, pc_plus4E:         8, imm_sl2:        48
-rsD: 3, rtD: 7, rsE: 0, rtE: 3, writeregE: 3, writeregM: 2, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000000c,instr:2067fff7,instrD:2067fff7
-pc_plus4:00000010,pc_plus4D:0000000c
-rd1D:         x,rd1E:         0
-rd2D:         x,rd2E:         x
 mips,data_ram_wea:0,alu_result:         5, mem_wdata:         x
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00011, regwrite: 1, pc: 0000000c, instr: 2067fff7, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:          x, rd1E:          0, alu_srcB:         12, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         5, eql1:         x,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000010,pc_branchM:00000038, jump:0,pc_jump:019fffdc, pc_next_jump:00000010
-datapath, pc_branch:ffffffe8, pc_plus4E:         8, imm_sl2:4294967260
-rsD: 3, rtD: 7, rsE: 0, rtE: 3, writeregE: 3, writeregM: 2, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000000c,instr:2067fff7,instrD:2067fff7
-pc_plus4:00000010,pc_plus4D:0000000c
-rd1D:         x,rd1E:         0
-rd2D:         x,rd2E:         x
 data_ram_wea: 0, alu_result:          5, mem_wdata: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00011, regwrite: 1, pc: 0000000c, instr: 2067fff7, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:          x, rd1E:          0, alu_srcB:         12, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         5, eql1:         x,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000010,pc_branchM:00000038, jump:0,pc_jump:019fffdc, pc_next_jump:00000010
-datapath, pc_branch:ffffffe8, pc_plus4E:         8, imm_sl2:4294967260
-rsD: 3, rtD: 7, rsE: 0, rtE: 3, writeregE: 3, writeregM: 2, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000000c,instr:2067fff7,instrD:2067fff7
-pc_plus4:00000010,pc_plus4D:0000000c
-rd1D:         x,rd1E:         0
-rd2D:         x,rd2E:         x
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         5, mem_wdata:         x
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00011, regwrite: 1, pc: 0000000c, instr: 2067fff7, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:          x, rd1E:          0, alu_srcB:         12, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         5, eql1:         x,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000010,pc_branchM:00000038, jump:0,pc_jump:019fffdc, pc_next_jump:00000010
-datapath, pc_branch:ffffffe8, pc_plus4E:         8, imm_sl2:4294967260
-rsD: 3, rtD: 7, rsE: 0, rtE: 3, writeregE: 3, writeregM: 2, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000000c,instr:00e22025,instrD:2067fff7
-pc_plus4:00000010,pc_plus4D:0000000c
-rd1D:         x,rd1E:         0
-rd2D:         x,rd2E:         x
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00011, regwrite: 1, pc: 0000000c, instr: 2067fff7, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:          x, rd1E:          0, alu_srcB:         12, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         5, eql1:         x,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000010,pc_branchM:00000038, jump:0,pc_jump:019fffdc, pc_next_jump:00000010
-datapath, pc_branch:ffffffe8, pc_plus4E:         8, imm_sl2:4294967260
-rsD: 3, rtD: 7, rsE: 0, rtE: 3, writeregE: 3, writeregM: 2, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000000c,instr:00e22025,instrD:2067fff7
-pc_plus4:00000010,pc_plus4D:0000000c
-rd1D:         x,rd1E:         0
-rd2D:         x,rd2E:         x
 mips,data_ram_wea:0,alu_result:         5, mem_wdata:         x
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:010
 controller, funct:110111,aluop:00,alucontrolD:010
 alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000010, instr: 00e22025, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          x, rd1E:          x, alu_srcB: 4294967287, alucontrol:010, alu_result:         5,memtorg:0, wd3:         5
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:        12, eql1:         x,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000010,pc_branchM:ffffffe8, jump:0,pc_jump:03888094, pc_next_jump:00000010
-datapath, pc_branch:ffffffec, pc_plus4E:        12, imm_sl2:4294967260
-rsD: 7, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 3, writeregW: 2,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000010,instr:00e22025,instrD:00e22025
-pc_plus4:00000014,pc_plus4D:00000010
-rd1D:         x,rd1E:         x
-rd2D:         x,rd2E:         x
 mips,data_ram_wea:0,alu_result:        12, mem_wdata:         x
 regfile, we3:1, wd3:00000000000000000000000000000101, rf[ 2]:         5, rf[5]:         x, rf[2]:         5, rf[3]:         x,rf[4]:         x,rf[7]:         x
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000010, instr: 00e22025, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          x, rd1E:          x, alu_srcB: 4294967287, alucontrol:010, alu_result:         5,memtorg:0, wd3:         5
-datapath, rd1D:         x,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:        12, eql1:         x,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000014,pc_branchM:ffffffe8, jump:0,pc_jump:03888094, pc_next_jump:00000014
-datapath, pc_branch:000080a4, pc_plus4E:        12, imm_sl2:     32916
-rsD: 7, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 3, writeregW: 2,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000010,instr:00e22025,instrD:00e22025
-pc_plus4:00000014,pc_plus4D:00000010
-rd1D:         x,rd1E:         x
-rd2D:         5,rd2E:         x
 alu_dec, alucontrol:010
 alu_dec, alucontrol:001
 data_ram_wea: 0, alu_result:         12, mem_wdata: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000010, instr: 00e22025, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          x, rd1E:          x, alu_srcB: 4294967287, alucontrol:010, alu_result:         5,memtorg:0, wd3:         5
-datapath, rd1D:         x,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:        12, eql1:         x,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000014,pc_branchM:ffffffe8, jump:0,pc_jump:03888094, pc_next_jump:00000014
-datapath, pc_branch:000080a4, pc_plus4E:        12, imm_sl2:     32916
-rsD: 7, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 3, writeregW: 2,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000010,instr:00e22025,instrD:00e22025
-pc_plus4:00000014,pc_plus4D:00000010
-rd1D:         x,rd1E:         x
-rd2D:         5,rd2E:         x
+Simulation Failed
 mips,data_ram_wea:0,alu_result:        12, mem_wdata:         x
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000010, instr: 00e22025, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          x, rd1E:          x, alu_srcB: 4294967287, alucontrol:010, alu_result:         5,memtorg:0, wd3:         5
-datapath, rd1D:         x,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:        12, eql1:         x,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000014,pc_branchM:ffffffe8, jump:0,pc_jump:03888094, pc_next_jump:00000014
-datapath, pc_branch:000080a4, pc_plus4E:        12, imm_sl2:     32916
-rsD: 7, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 3, writeregW: 2,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000010,instr:00642824,instrD:00e22025
-pc_plus4:00000014,pc_plus4D:00000010
-rd1D:         x,rd1E:         x
-rd2D:         5,rd2E:         x
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000010, instr: 00e22025, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          x, rd1E:          x, alu_srcB: 4294967287, alucontrol:010, alu_result:         5,memtorg:0, wd3:         5
-datapath, rd1D:         x,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:        12, eql1:         x,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000014,pc_branchM:ffffffe8, jump:0,pc_jump:03888094, pc_next_jump:00000014
-datapath, pc_branch:000080a4, pc_plus4E:        12, imm_sl2:     32916
-rsD: 7, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 3, writeregW: 2,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000010,instr:00642824,instrD:00e22025
-pc_plus4:00000014,pc_plus4D:00000010
-rd1D:         x,rd1E:         x
-rd2D:         5,rd2E:         x
 mips,data_ram_wea:0,alu_result:        12, mem_wdata:         x
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:001
 controller, funct:100101,aluop:10,alucontrolD:001
 alu_dec, alucontrol:001
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000014, instr: 00642824, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:          x, rd1E:          x, alu_srcB:          5, alucontrol:001, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         3, eql1:         x,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000014,pc_branchM:000080a4, jump:0,pc_jump:0190a090, pc_next_jump:00000014
-datapath, pc_branch:000080a8, pc_plus4E:        16, imm_sl2:     32916
-rsD: 3, rtD: 4, rsE: 7, rtE: 2, writeregE: 4, writeregM: 7, writeregW: 3,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000014,instr:00642824,instrD:00642824
-pc_plus4:00000018,pc_plus4D:00000014
-rd1D:         x,rd1E:         x
-rd2D:         x,rd2E:         5
 mips,data_ram_wea:0,alu_result:         3, mem_wdata:         x
 regfile, we3:1, wd3:00000000000000000000000000001100, rf[ 3]:        12, rf[5]:         x, rf[2]:         5, rf[3]:        12,rf[4]:         x,rf[7]:         x
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000014, instr: 00642824, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          x, alu_srcB:          5, alucontrol:001, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:        12,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         3, eql1:        12,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000018,pc_branchM:000080a4, jump:0,pc_jump:0190a090, pc_next_jump:00000018
-datapath, pc_branch:0000a0a4, pc_plus4E:        16, imm_sl2:     41104
-rsD: 3, rtD: 4, rsE: 7, rtE: 2, writeregE: 4, writeregM: 7, writeregW: 3,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000014,instr:00642824,instrD:00642824
-pc_plus4:00000018,pc_plus4D:00000014
-rd1D:        12,rd1E:         x
-rd2D:         x,rd2E:         5
 alu_dec, alucontrol:000
 data_ram_wea: 0, alu_result:          3, mem_wdata: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000014, instr: 00642824, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          x, alu_srcB:          5, alucontrol:001, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:        12,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         3, eql1:        12,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000018,pc_branchM:000080a4, jump:0,pc_jump:0190a090, pc_next_jump:00000018
-datapath, pc_branch:0000a0a4, pc_plus4E:        16, imm_sl2:     41104
-rsD: 3, rtD: 4, rsE: 7, rtE: 2, writeregE: 4, writeregM: 7, writeregW: 3,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000014,instr:00642824,instrD:00642824
-pc_plus4:00000018,pc_plus4D:00000014
-rd1D:        12,rd1E:         x
-rd2D:         x,rd2E:         5
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         3, mem_wdata:         x
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000014, instr: 00642824, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          x, alu_srcB:          5, alucontrol:001, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:        12,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         3, eql1:        12,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000018,pc_branchM:000080a4, jump:0,pc_jump:0190a090, pc_next_jump:00000018
-datapath, pc_branch:0000a0a4, pc_plus4E:        16, imm_sl2:     41104
-rsD: 3, rtD: 4, rsE: 7, rtE: 2, writeregE: 4, writeregM: 7, writeregW: 3,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000014,instr:00a42820,instrD:00642824
-pc_plus4:00000018,pc_plus4D:00000014
-rd1D:        12,rd1E:         x
-rd2D:         x,rd2E:         5
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000014, instr: 00642824, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          x, alu_srcB:          5, alucontrol:001, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:        12,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         3, eql1:        12,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000018,pc_branchM:000080a4, jump:0,pc_jump:0190a090, pc_next_jump:00000018
-datapath, pc_branch:0000a0a4, pc_plus4E:        16, imm_sl2:     41104
-rsD: 3, rtD: 4, rsE: 7, rtE: 2, writeregE: 4, writeregM: 7, writeregW: 3,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000014,instr:00a42820,instrD:00642824
-pc_plus4:00000018,pc_plus4D:00000014
-rd1D:        12,rd1E:         x
-rd2D:         x,rd2E:         5
 mips,data_ram_wea:0,alu_result:         3, mem_wdata:         x
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
 controller, funct:100100,aluop:10,alucontrolD:000
 alu_dec, alucontrol:000
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 00000018, instr: 00a42820, instr[25:21]: 00101, instr[20:16]: 00100, rd1D:          x, rd1E:         12, alu_srcB:          x, alucontrol:000, alu_result:         3,memtorg:0, wd3:         3
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         7, eql1:         x,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000018,pc_branchM:0000a0a4, jump:0,pc_jump:0290a080, pc_next_jump:00000018
-datapath, pc_branch:0000a0a8, pc_plus4E:        20, imm_sl2:     41104
-rsD: 5, rtD: 4, rsE: 3, rtE: 4, writeregE: 5, writeregM: 4, writeregW: 7,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000018,instr:00a42820,instrD:00a42820
-pc_plus4:0000001c,pc_plus4D:00000018
-rd1D:         x,rd1E:        12
-rd2D:         x,rd2E:         x
 mips,data_ram_wea:0,alu_result:         7, mem_wdata:         5
 regfile, we3:1, wd3:00000000000000000000000000000011, rf[ 7]:         3, rf[5]:         x, rf[2]:         5, rf[3]:        12,rf[4]:         x,rf[7]:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 00000018, instr: 00a42820, instr[25:21]: 00101, instr[20:16]: 00100, rd1D:          x, rd1E:         12, alu_srcB:          7, alucontrol:000, alu_result:         3,memtorg:0, wd3:         3
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:0,alu_resultM:         7, eql1:         x,eql2:         x,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000001c,pc_branchM:0000a0a4, jump:0,pc_jump:0290a080, pc_next_jump:0000001c
-datapath, pc_branch:0000a098, pc_plus4E:        20, imm_sl2:     41088
-rsD: 5, rtD: 4, rsE: 3, rtE: 4, writeregE: 5, writeregM: 4, writeregW: 7,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000018,instr:00a42820,instrD:00a42820
-pc_plus4:0000001c,pc_plus4D:00000018
-rd1D:         x,rd1E:        12
-rd2D:         x,rd2E:         x
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 00000018, instr: 00a42820, instr[25:21]: 00101, instr[20:16]: 00100, rd1D:          x, rd1E:         12, alu_srcB:          7, alucontrol:000, alu_result:         3,memtorg:0, wd3:         3
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:1,alu_resultM:         7, eql1:         x,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000001c,pc_branchM:0000a0a4, jump:0,pc_jump:0290a080, pc_next_jump:0000001c
-datapath, pc_branch:0000a098, pc_plus4E:        20, imm_sl2:     41088
-rsD: 5, rtD: 4, rsE: 3, rtE: 4, writeregE: 5, writeregM: 4, writeregW: 7,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000018,instr:00a42820,instrD:00a42820
-pc_plus4:0000001c,pc_plus4D:00000018
-rd1D:         x,rd1E:        12
-rd2D:         x,rd2E:         x
 alu_dec, alucontrol:010
 data_ram_wea: 0, alu_result:          7, mem_wdata: 00000000000000000000000000000101
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 00000018, instr: 00a42820, instr[25:21]: 00101, instr[20:16]: 00100, rd1D:          x, rd1E:         12, alu_srcB:          7, alucontrol:000, alu_result:         3,memtorg:0, wd3:         3
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:1,alu_resultM:         7, eql1:         x,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000001c,pc_branchM:0000a0a4, jump:0,pc_jump:0290a080, pc_next_jump:0000001c
-datapath, pc_branch:0000a098, pc_plus4E:        20, imm_sl2:     41088
-rsD: 5, rtD: 4, rsE: 3, rtE: 4, writeregE: 5, writeregM: 4, writeregW: 7,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000018,instr:00a42820,instrD:00a42820
-pc_plus4:0000001c,pc_plus4D:00000018
-rd1D:         x,rd1E:        12
-rd2D:         x,rd2E:         x
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         7, mem_wdata:         5
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 00000018, instr: 00a42820, instr[25:21]: 00101, instr[20:16]: 00100, rd1D:          x, rd1E:         12, alu_srcB:          7, alucontrol:000, alu_result:         3,memtorg:0, wd3:         3
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:1,alu_resultM:         7, eql1:         x,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000001c,pc_branchM:0000a0a4, jump:0,pc_jump:0290a080, pc_next_jump:0000001c
-datapath, pc_branch:0000a098, pc_plus4E:        20, imm_sl2:     41088
-rsD: 5, rtD: 4, rsE: 3, rtE: 4, writeregE: 5, writeregM: 4, writeregW: 7,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000018,instr:10a7000a,instrD:00a42820
-pc_plus4:0000001c,pc_plus4D:00000018
-rd1D:         x,rd1E:        12
-rd2D:         x,rd2E:         x
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 00000018, instr: 00a42820, instr[25:21]: 00101, instr[20:16]: 00100, rd1D:          x, rd1E:         12, alu_srcB:          7, alucontrol:000, alu_result:         3,memtorg:0, wd3:         3
-datapath, rd1D:         x,forwardAD:0,rd2D:         x,forwardBD:1,alu_resultM:         7, eql1:         x,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000001c,pc_branchM:0000a0a4, jump:0,pc_jump:0290a080, pc_next_jump:0000001c
-datapath, pc_branch:0000a098, pc_plus4E:        20, imm_sl2:     41088
-rsD: 5, rtD: 4, rsE: 3, rtE: 4, writeregE: 5, writeregM: 4, writeregW: 7,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000018,instr:10a7000a,instrD:00a42820
-pc_plus4:0000001c,pc_plus4D:00000018
-rd1D:         x,rd1E:        12
-rd2D:         x,rd2E:         x
 mips,data_ram_wea:0,alu_result:         7, mem_wdata:         5
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:010
 controller, funct:100000,aluop:10,alucontrolD:010
 alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          x, rd1E:          x, alu_srcB:          7, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         x,forwardAD:0,rd2D:         3,forwardBD:1,alu_resultM:         4, eql1:         x,eql2:         4,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000001c,pc_branchM:0000a098, jump:0,pc_jump:029c0028, pc_next_jump:0000001c
-datapath, pc_branch:0000a09c, pc_plus4E:        24, imm_sl2:     41088
-rsD: 5, rtD: 7, rsE: 5, rtE: 4, writeregE: 5, writeregM: 5, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000001c,instr:10a7000a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         x,rd1E:         x
-rd2D:         3,rd2E:         x
 mips,data_ram_wea:0,alu_result:         4, mem_wdata:         7
 regfile, we3:1, wd3:00000000000000000000000000000111, rf[ 4]:         7, rf[5]:         x, rf[2]:         5, rf[3]:        12,rf[4]:         7,rf[7]:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          x, rd1E:          x, alu_srcB:          7, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         x,forwardAD:0,rd2D:         3,forwardBD:1,alu_resultM:         4, eql1:         x,eql2:         4,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:0000a098, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:        24, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 5, rtE: 4, writeregE: 5, writeregM: 5, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000001c,instr:10a7000a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         x,rd1E:         x
-rd2D:         3,rd2E:         x
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          x, rd1E:          x, alu_srcB:          7, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         x,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:         4, eql1:         4,eql2:         3,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:0000a098, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:        24, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 5, rtE: 4, writeregE: 5, writeregM: 5, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000001c,instr:10a7000a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         x,rd1E:         x
-rd2D:         3,rd2E:         x
 alu_dec, alucontrol:000
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          x, rd1E:          x, alu_srcB:          7, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         x,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:         4, eql1:         4,eql2:         3,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:0000a098, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:        24, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 5, rtE: 4, writeregE: 5, writeregM: 5, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:0000001c,instr:10a7000a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         x,rd1E:         x
-rd2D:         3,rd2E:         x
 hazard,lwstall:0,branch_stall:1
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          x, rd1E:          x, alu_srcB:          7, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         x,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:         4, eql1:         4,eql2:         3,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:0000a098, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:        24, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 5, rtE: 4, writeregE: 5, writeregM: 5, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:1
-~stallF:0,pc:0000001c,instr:10a7000a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         x,rd1E:         x
-rd2D:         3,rd2E:         x
 alu_dec, alucontrol:110
 data_ram_wea: 0, alu_result:          4, mem_wdata: 00000000000000000000000000000111
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          x, rd1E:          x, alu_srcB:          7, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         x,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:         4, eql1:         4,eql2:         3,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:0000a098, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:        24, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 5, rtE: 4, writeregE: 5, writeregM: 5, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:1
-~stallF:0,pc:0000001c,instr:10a7000a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         x,rd1E:         x
-rd2D:         3,rd2E:         x
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         4, mem_wdata:         7
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          x, rd1E:          x, alu_srcB:          7, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         x,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:         4, eql1:         4,eql2:         3,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:0000a098, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:        24, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 5, rtE: 4, writeregE: 5, writeregM: 5, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:1
-~stallF:0,pc:0000001c,instr:0064202a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         x,rd1E:         x
-rd2D:         3,rd2E:         x
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00101, regwrite: 1, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          x, rd1E:          x, alu_srcB:          7, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         x,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:         4, eql1:         4,eql2:         3,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:0000a098, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:        24, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 5, rtE: 4, writeregE: 5, writeregM: 5, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:1
-~stallF:0,pc:0000001c,instr:0064202a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         x,rd1E:         x
-rd2D:         3,rd2E:         x
 mips,data_ram_wea:0,alu_result:         4, mem_wdata:         7
 controller,regwriteD:0,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:110
 controller, funct:001010,aluop:01,alucontrolD:110
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          x, rd1E:          0, alu_srcB:          7, alucontrol:110, alu_result:         4,memtorg:0, wd3:         4
-datapath, rd1D:         x,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:        11, eql1:        11,eql2:         3,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:00000044, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:         0, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 0, rtE: 0, writeregE: 0, writeregM: 5, writeregW: 5,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:1
-~stallF:0,pc:0000001c,instr:0064202a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         x,rd1E:         0
-rd2D:         3,rd2E:         0
+alu_dec, alucontrol:110
 mips,data_ram_wea:0,alu_result:        11, mem_wdata:         7
 regfile, we3:1, wd3:00000000000000000000000000000100, rf[ 5]:         4, rf[5]:         4, rf[2]:         5, rf[3]:        12,rf[4]:         7,rf[7]:         3
 hazard,lwstall:0,branch_stall:0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          4, rd1E:          0, alu_srcB:          0, alucontrol:110, alu_result:         4,memtorg:0, wd3:         4
-datapath, rd1D:         4,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:        11, eql1:        11,eql2:         3,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:00000044, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:         0, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 0, rtE: 0, writeregE: 0, writeregM: 5, writeregW: 5,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:0000001c,instr:0064202a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         4,rd1E:         0
-rd2D:         3,rd2E:         0
-data_ram_wea: 0, alu_result:         11, mem_wdata: 00000000000000000000000000000111
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          4, rd1E:          0, alu_srcB:          0, alucontrol:110, alu_result:         4,memtorg:0, wd3:         4
-datapath, rd1D:         4,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:        11, eql1:        11,eql2:         3,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:00000044, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:         0, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 0, rtE: 0, writeregE: 0, writeregM: 5, writeregW: 5,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:0000001c,instr:0064202a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         4,rd1E:         0
-rd2D:         3,rd2E:         0
-mips,data_ram_wea:0,alu_result:        11, mem_wdata:         7
-clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 0000001c, instr: 10a7000a, instr[25:21]: 00101, instr[20:16]: 00111, rd1D:          4, rd1E:          0, alu_srcB:          0, alucontrol:110, alu_result:         4,memtorg:0, wd3:         4
-datapath, rd1D:         4,forwardAD:1,rd2D:         3,forwardBD:0,alu_resultM:        11, eql1:        11,eql2:         3,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:00000044, jump:0,pc_jump:029c0028, pc_next_jump:00000020
-datapath, pc_branch:00000044, pc_plus4E:         0, imm_sl2:        40
-rsD: 5, rtD: 7, rsE: 0, rtE: 0, writeregE: 0, writeregM: 5, writeregW: 5,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:0000001c,instr:0064202a,instrD:10a7000a
-pc_plus4:00000020,pc_plus4D:0000001c
-rd1D:         4,rd1E:         0
-rd2D:         3,rd2E:         0
-mips,data_ram_wea:0,alu_result:        11, mem_wdata:         7
-controller,regwriteD:0,regwriteE:0,regwriteM:1,regwriteW:1, alucontrolE:110
-controller, funct:001010,aluop:01,alucontrolD:110
 alu_dec, alucontrol:110
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 00000020, instr: 0064202a, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          4, alu_srcB:          3, alucontrol:110, alu_result:        11,memtorg:0, wd3:        11
-datapath, rd1D:        12,forwardAD:1,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         7,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000020,pc_branchM:00000044, jump:0,pc_jump:019080a8, pc_next_jump:00000020
-datapath, pc_branch:00000048, pc_plus4E:        28, imm_sl2:        40
-rsD: 3, rtD: 4, rsE: 5, rtE: 7, writeregE: 7, writeregM: 0, writeregW: 5,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:00000020,instr:0064202a,instrD:0064202a
-pc_plus4:00000024,pc_plus4D:00000020
-rd1D:        12,rd1E:         4
-rd2D:         7,rd2E:         3
-mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-regfile, we3:1, wd3:00000000000000000000000000001011, rf[ 5]:        11, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         7,rf[7]:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 00000020, instr: 0064202a, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          4, alu_srcB:          3, alucontrol:110, alu_result:        11,memtorg:0, wd3:        11
-datapath, rd1D:        12,forwardAD:1,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         7,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000024,pc_branchM:00000044, jump:0,pc_jump:019080a8, pc_next_jump:00000024
-datapath, pc_branch:000080c8, pc_plus4E:        28, imm_sl2:     32936
-rsD: 3, rtD: 4, rsE: 5, rtE: 7, writeregE: 7, writeregM: 0, writeregW: 5,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:00000020,instr:0064202a,instrD:0064202a
-pc_plus4:00000024,pc_plus4D:00000020
-rd1D:        12,rd1E:         4
-rd2D:         7,rd2E:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 00000020, instr: 0064202a, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          4, alu_srcB:          3, alucontrol:110, alu_result:        11,memtorg:0, wd3:        11
-datapath, rd1D:        12,forwardAD:0,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:        12,eql2:         7,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000024,pc_branchM:00000044, jump:0,pc_jump:019080a8, pc_next_jump:00000024
-datapath, pc_branch:000080c8, pc_plus4E:        28, imm_sl2:     32936
-rsD: 3, rtD: 4, rsE: 5, rtE: 7, writeregE: 7, writeregM: 0, writeregW: 5,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:00000020,instr:0064202a,instrD:0064202a
-pc_plus4:00000024,pc_plus4D:00000020
-rd1D:        12,rd1E:         4
-rd2D:         7,rd2E:         3
-alu_dec, alucontrol:110
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 00000020, instr: 0064202a, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          4, alu_srcB:          3, alucontrol:110, alu_result:        11,memtorg:0, wd3:        11
-datapath, rd1D:        12,forwardAD:0,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:        12,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000024,pc_branchM:00000044, jump:0,pc_jump:019080a8, pc_next_jump:00000024
-datapath, pc_branch:000080c8, pc_plus4E:        28, imm_sl2:     32936
-rsD: 3, rtD: 4, rsE: 5, rtE: 7, writeregE: 7, writeregM: 0, writeregW: 5,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000020,instr:0064202a,instrD:0064202a
-pc_plus4:00000024,pc_plus4D:00000020
-rd1D:        12,rd1E:         4
-rd2D:         7,rd2E:         3
 alu_dec, alucontrol:111
-data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 00000020, instr: 0064202a, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          4, alu_srcB:          3, alucontrol:110, alu_result:        11,memtorg:0, wd3:        11
-datapath, rd1D:        12,forwardAD:0,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:        12,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000024,pc_branchM:00000044, jump:0,pc_jump:019080a8, pc_next_jump:00000024
-datapath, pc_branch:000080c8, pc_plus4E:        28, imm_sl2:     32936
-rsD: 3, rtD: 4, rsE: 5, rtE: 7, writeregE: 7, writeregM: 0, writeregW: 5,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000020,instr:0064202a,instrD:0064202a
-pc_plus4:00000024,pc_plus4D:00000020
-rd1D:        12,rd1E:         4
-rd2D:         7,rd2E:         3
-mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 00000020, instr: 0064202a, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          4, alu_srcB:          3, alucontrol:110, alu_result:        11,memtorg:0, wd3:        11
-datapath, rd1D:        12,forwardAD:0,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:        12,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000024,pc_branchM:00000044, jump:0,pc_jump:019080a8, pc_next_jump:00000024
-datapath, pc_branch:000080c8, pc_plus4E:        28, imm_sl2:     32936
-rsD: 3, rtD: 4, rsE: 5, rtE: 7, writeregE: 7, writeregM: 0, writeregW: 5,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000020,instr:10800001,instrD:0064202a
-pc_plus4:00000024,pc_plus4D:00000020
-rd1D:        12,rd1E:         4
-rd2D:         7,rd2E:         3
+data_ram_wea: 0, alu_result:         11, mem_wdata: 00000000000000000000000000000111
+Simulation Failed
+mips,data_ram_wea:0,alu_result:        11, mem_wdata:         7
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 00000020, instr: 0064202a, instr[25:21]: 00011, instr[20:16]: 00100, rd1D:         12, rd1E:          4, alu_srcB:          3, alucontrol:110, alu_result:        11,memtorg:0, wd3:        11
-datapath, rd1D:        12,forwardAD:0,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:        12,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000024,pc_branchM:00000044, jump:0,pc_jump:019080a8, pc_next_jump:00000024
-datapath, pc_branch:000080c8, pc_plus4E:        28, imm_sl2:     32936
-rsD: 3, rtD: 4, rsE: 5, rtE: 7, writeregE: 7, writeregM: 0, writeregW: 5,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000020,instr:10800001,instrD:0064202a
-pc_plus4:00000024,pc_plus4D:00000020
-rd1D:        12,rd1E:         4
-rd2D:         7,rd2E:         3
-mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-controller,regwriteD:1,regwriteE:0,regwriteM:0,regwriteW:1, alucontrolE:111
+mips,data_ram_wea:0,alu_result:        11, mem_wdata:         7
+controller,regwriteD:1,regwriteE:0,regwriteM:1,regwriteW:1, alucontrolE:111
 controller, funct:101010,aluop:10,alucontrolD:111
 alu_dec, alucontrol:111
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:         12, alu_srcB:          7, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         7,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         8, eql1:         7,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000024,pc_branchM:000080c8, jump:0,pc_jump:02000004, pc_next_jump:00000024
-datapath, pc_branch:000080cc, pc_plus4E:        32, imm_sl2:     32936
-rsD: 4, rtD: 0, rsE: 3, rtE: 4, writeregE: 4, writeregM: 7, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000024,instr:10800001,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:        12
-rd2D:         0,rd2E:         7
 mips,data_ram_wea:0,alu_result:         8, mem_wdata:         3
-regfile, we3:0, wd3:00000000000000000000000000000000, rf[ 0]:         0, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         7,rf[7]:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:         12, alu_srcB:          7, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         7,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         8, eql1:         7,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000028,pc_branchM:000080c8, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:        32, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 3, rtE: 4, writeregE: 4, writeregM: 7, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000024,instr:10800001,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:        12
-rd2D:         0,rd2E:         7
+regfile, we3:1, wd3:00000000000000000000000000001011, rf[ 5]:        11, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         7,rf[7]:         3
 alu_dec, alucontrol:000
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:         12, alu_srcB:          7, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         7,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         8, eql1:         7,eql2:         0,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000028,pc_branchM:000080c8, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:        32, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 3, rtE: 4, writeregE: 4, writeregM: 7, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:1
-~stallF:1,pc:00000024,instr:10800001,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:        12
-rd2D:         0,rd2E:         7
 hazard,lwstall:0,branch_stall:1
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:         12, alu_srcB:          7, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         7,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         8, eql1:         7,eql2:         0,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000028,pc_branchM:000080c8, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:        32, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 3, rtE: 4, writeregE: 4, writeregM: 7, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:1
-~stallF:0,pc:00000024,instr:10800001,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:        12
-rd2D:         0,rd2E:         7
 alu_dec, alucontrol:110
 data_ram_wea: 0, alu_result:          8, mem_wdata: 00000000000000000000000000000011
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:         12, alu_srcB:          7, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         7,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         8, eql1:         7,eql2:         0,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000028,pc_branchM:000080c8, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:        32, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 3, rtE: 4, writeregE: 4, writeregM: 7, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:1
-~stallF:0,pc:00000024,instr:10800001,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:        12
-rd2D:         0,rd2E:         7
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         8, mem_wdata:         3
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:         12, alu_srcB:          7, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         7,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         8, eql1:         7,eql2:         0,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000028,pc_branchM:000080c8, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:        32, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 3, rtE: 4, writeregE: 4, writeregM: 7, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:1
-~stallF:0,pc:00000024,instr:20050000,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:        12
-rd2D:         0,rd2E:         7
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:         12, alu_srcB:          7, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         7,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         8, eql1:         7,eql2:         0,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000028,pc_branchM:000080c8, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:        32, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 3, rtE: 4, writeregE: 4, writeregM: 7, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:1
-~stallF:0,pc:00000024,instr:20050000,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:        12
-rd2D:         0,rd2E:         7
 mips,data_ram_wea:0,alu_result:         8, mem_wdata:         3
-controller,regwriteD:0,regwriteE:1,regwriteM:0,regwriteW:0, alucontrolE:110
+controller,regwriteD:0,regwriteE:1,regwriteM:0,regwriteW:1, alucontrolE:110
 controller, funct:000001,aluop:01,alucontrolD:110
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:          0, alu_srcB:          0, alucontrol:110, alu_result:         8,memtorg:0, wd3:         8
-datapath, rd1D:         7,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         7,eql2:         0,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000028,pc_branchM:00000028, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:         0, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 4, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:1
-~stallF:0,pc:00000024,instr:20050000,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:         0
-rd2D:         0,rd2E:         0
+alu_dec, alucontrol:110
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         7
 regfile, we3:0, wd3:00000000000000000000000000001000, rf[ 7]:         3, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         7,rf[7]:         3
 hazard,lwstall:0,branch_stall:0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:          0, alu_srcB:          0, alucontrol:110, alu_result:         8,memtorg:0, wd3:         8
-datapath, rd1D:         7,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         7,eql2:         0,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000028,pc_branchM:00000028, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:         0, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 4, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:1
-~stallF:1,pc:00000024,instr:20050000,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:         0
-rd2D:         0,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:          0, alu_srcB:          0, alucontrol:110, alu_result:         8,memtorg:0, wd3:         8
-datapath, rd1D:         7,forwardAD:1,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:1,pcsrc:0
-datapath, pcsrc:0, pc_next:00000028,pc_branchM:00000028, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:         0, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 4, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:1
-~stallF:1,pc:00000024,instr:20050000,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:         0
-rd2D:         0,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:          0, alu_srcB:          0, alucontrol:110, alu_result:         8,memtorg:0, wd3:         8
-datapath, rd1D:         7,forwardAD:1,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:1,pcsrc:1
-datapath, pcsrc:1, pc_next:00000028,pc_branchM:00000028, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:         0, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 4, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:1
-~stallF:1,pc:00000024,instr:20050000,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:         0
-rd2D:         0,rd2E:         0
+alu_dec, alucontrol:110
+alu_dec, alucontrol:010
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000111
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:          0, alu_srcB:          0, alucontrol:110, alu_result:         8,memtorg:0, wd3:         8
-datapath, rd1D:         7,forwardAD:1,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:1,pcsrc:1
-datapath, pcsrc:1, pc_next:00000028,pc_branchM:00000028, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:         0, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 4, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:1
-~stallF:1,pc:00000024,instr:20050000,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:         0
-rd2D:         0,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         7
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000024, instr: 10800001, instr[25:21]: 00100, instr[20:16]: 00000, rd1D:          7, rd1E:          0, alu_srcB:          0, alucontrol:110, alu_result:         8,memtorg:0, wd3:         8
-datapath, rd1D:         7,forwardAD:1,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:1,pcsrc:1
-datapath, pcsrc:1, pc_next:00000028,pc_branchM:00000028, jump:0,pc_jump:02000004, pc_next_jump:00000028
-datapath, pc_branch:00000028, pc_plus4E:         0, imm_sl2:         4
-rsD: 4, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 4, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:1
-~stallF:1,pc:00000024,instr:20050000,instrD:10800001
-pc_plus4:00000028,pc_plus4D:00000024
-rd1D:         7,rd1E:         0
-rd2D:         0,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         7
-controller,regwriteD:0,regwriteE:0,regwriteM:1,regwriteW:0, alucontrolE:110
-controller, funct:000001,aluop:01,alucontrolD:110
-alu_dec, alucontrol:110
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000028, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          7, alu_srcB:          0, alucontrol:110, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:1,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:1,pcsrc:1
-datapath, pcsrc:1, pc_next:00000028,pc_branchM:00000028, jump:0,pc_jump:00000000, pc_next_jump:00000028
-datapath, pc_branch:00000004, pc_plus4E:        36, imm_sl2:         4
-rsD: 0, rtD: 0, rsE: 4, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 4,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:00000028,instr:20050000,instrD:00000000
-pc_plus4:0000002c,pc_plus4D:00000000
-rd1D:         0,rd1E:         7
-rd2D:         0,rd2E:         0
+controller,regwriteD:1,regwriteE:0,regwriteM:1,regwriteW:0, alucontrolE:010
+controller, funct:000000,aluop:00,alucontrolD:010
+alu_dec, alucontrol:010
 regfile, we3:1, wd3:00000000000000000000000000000000, rf[ 4]:         0, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         0,rf[7]:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000028, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          7, alu_srcB:          0, alucontrol:110, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:1,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:1,pcsrc:1
-datapath, pcsrc:1, pc_next:00000004,pc_branchM:00000028, jump:0,pc_jump:00000000, pc_next_jump:00000004
-datapath, pc_branch:00000000, pc_plus4E:        36, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 4, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 4,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:00000028,instr:20050000,instrD:00000000
-pc_plus4:0000002c,pc_plus4D:00000000
-rd1D:         0,rd1E:         7
-rd2D:         0,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000028, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          7, alu_srcB:          0, alucontrol:110, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:1,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:1,pcsrc:1
-datapath, pcsrc:1, pc_next:00000000,pc_branchM:00000028, jump:0,pc_jump:00000000, pc_next_jump:00000000
-datapath, pc_branch:00000000, pc_plus4E:        36, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 4, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 4,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:00000028,instr:20050000,instrD:00000000
-pc_plus4:0000002c,pc_plus4D:00000000
-rd1D:         0,rd1E:         7
-rd2D:         0,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000028, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          7, alu_srcB:          0, alucontrol:110, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:1,pcsrc:1
-datapath, pcsrc:1, pc_next:00000000,pc_branchM:00000028, jump:0,pc_jump:00000000, pc_next_jump:00000000
-datapath, pc_branch:00000000, pc_plus4E:        36, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 4, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 4,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:1
-~stallF:1,pc:00000028,instr:20050000,instrD:00000000
-pc_plus4:0000002c,pc_plus4D:00000000
-rd1D:         0,rd1E:         7
-rd2D:         0,rd2E:         0
-alu_dec, alucontrol:110
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000028, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          7, alu_srcB:          0, alucontrol:110, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000000,pc_branchM:00000028, jump:0,pc_jump:00000000, pc_next_jump:00000000
-datapath, pc_branch:00000000, pc_plus4E:        36, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 4, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 4,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000028,instr:20050000,instrD:00000000
-pc_plus4:0000002c,pc_plus4D:00000000
-rd1D:         0,rd1E:         7
-rd2D:         0,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000028, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          7, alu_srcB:          0, alucontrol:110, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000002c,pc_branchM:00000028, jump:0,pc_jump:00000000, pc_next_jump:0000002c
-datapath, pc_branch:00000000, pc_plus4E:        36, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 4, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 4,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000028,instr:20050000,instrD:00000000
-pc_plus4:0000002c,pc_plus4D:00000000
-rd1D:         0,rd1E:         7
-rd2D:         0,rd2E:         0
-alu_dec, alucontrol:000
-data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000028, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          7, alu_srcB:          0, alucontrol:110, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000002c,pc_branchM:00000028, jump:0,pc_jump:00000000, pc_next_jump:0000002c
-datapath, pc_branch:00000000, pc_plus4E:        36, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 4, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 4,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000028,instr:20050000,instrD:00000000
-pc_plus4:0000002c,pc_plus4D:00000000
-rd1D:         0,rd1E:         7
-rd2D:         0,rd2E:         0
-mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000028, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          7, alu_srcB:          0, alucontrol:110, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000002c,pc_branchM:00000028, jump:0,pc_jump:00000000, pc_next_jump:0000002c
-datapath, pc_branch:00000000, pc_plus4E:        36, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 4, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 4,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000028,instr:00e2202a,instrD:00000000
-pc_plus4:0000002c,pc_plus4D:00000000
-rd1D:         0,rd1E:         7
-rd2D:         0,rd2E:         0
-clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000028, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          7, alu_srcB:          0, alucontrol:110, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000002c,pc_branchM:00000028, jump:0,pc_jump:00000000, pc_next_jump:0000002c
-datapath, pc_branch:00000000, pc_plus4E:        36, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 4, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 4,
-regwriteE:0, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000028,instr:00e2202a,instrD:00000000
-pc_plus4:0000002c,pc_plus4D:00000000
-rd1D:         0,rd1E:         7
-rd2D:         0,rd2E:         0
-mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-controller,regwriteD:1,regwriteE:0,regwriteM:0,regwriteW:1, alucontrolE:000
-controller, funct:000000,aluop:10,alucontrolD:000
-alu_dec, alucontrol:000
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 0000002c, instr: 00e2202a, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000002c,pc_branchM:00000000, jump:0,pc_jump:038880a8, pc_next_jump:0000002c
-datapath, pc_branch:0000002c, pc_plus4E:         0, imm_sl2:         0
-rsD: 7, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:0000002c,instr:00e2202a,instrD:00e2202a
-pc_plus4:00000030,pc_plus4D:0000002c
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:         0
-regfile, we3:0, wd3:00000000000000000000000000000000, rf[ 0]:         0, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         0,rf[7]:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 0000002c, instr: 00e2202a, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         0, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000030,pc_branchM:00000000, jump:0,pc_jump:038880a8, pc_next_jump:00000030
-datapath, pc_branch:000080d4, pc_plus4E:         0, imm_sl2:     32936
-rsD: 7, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:0000002c,instr:00e2202a,instrD:00e2202a
-pc_plus4:00000030,pc_plus4D:0000002c
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:         0
+alu_dec, alucontrol:010
 alu_dec, alucontrol:111
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 0000002c, instr: 00e2202a, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         0, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000030,pc_branchM:00000000, jump:0,pc_jump:038880a8, pc_next_jump:00000030
-datapath, pc_branch:000080d4, pc_plus4E:         0, imm_sl2:     32936
-rsD: 7, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:0000002c,instr:00e2202a,instrD:00e2202a
-pc_plus4:00000030,pc_plus4D:0000002c
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:         0
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 0000002c, instr: 00e2202a, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         0, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000030,pc_branchM:00000000, jump:0,pc_jump:038880a8, pc_next_jump:00000030
-datapath, pc_branch:000080d4, pc_plus4E:         0, imm_sl2:     32936
-rsD: 7, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:0000002c,instr:00853820,instrD:00e2202a
-pc_plus4:00000030,pc_plus4D:0000002c
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 0000002c, instr: 00e2202a, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         0, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000030,pc_branchM:00000000, jump:0,pc_jump:038880a8, pc_next_jump:00000030
-datapath, pc_branch:000080d4, pc_plus4E:         0, imm_sl2:     32936
-rsD: 7, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:0000002c,instr:00853820,instrD:00e2202a
-pc_plus4:00000030,pc_plus4D:0000002c
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:         0
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-controller,regwriteD:1,regwriteE:1,regwriteM:0,regwriteW:0, alucontrolE:111
+controller,regwriteD:1,regwriteE:1,regwriteM:0,regwriteW:1, alucontrolE:111
 controller, funct:101010,aluop:10,alucontrolD:111
 alu_dec, alucontrol:111
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000030, instr: 00853820, instr[25:21]: 00100, instr[20:16]: 00101, rd1D:          0, rd1E:          3, alu_srcB:          5, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:        11,forwardBD:0,alu_resultM:         0, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000030,pc_branchM:000080d4, jump:0,pc_jump:0214e080, pc_next_jump:00000030
-datapath, pc_branch:000080d8, pc_plus4E:        44, imm_sl2:     32936
-rsD: 4, rtD: 5, rsE: 7, rtE: 2, writeregE: 4, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000030,instr:00853820,instrD:00853820
-pc_plus4:00000034,pc_plus4D:00000030
-rd1D:         0,rd1E:         3
-rd2D:        11,rd2E:         5
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000030, instr: 00853820, instr[25:21]: 00100, instr[20:16]: 00101, rd1D:          0, rd1E:          3, alu_srcB:          5, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:        11,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:        11,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000034,pc_branchM:000080d4, jump:0,pc_jump:0214e080, pc_next_jump:00000034
-datapath, pc_branch:0000e0b0, pc_plus4E:        44, imm_sl2:     57472
-rsD: 4, rtD: 5, rsE: 7, rtE: 2, writeregE: 4, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000030,instr:00853820,instrD:00853820
-pc_plus4:00000034,pc_plus4D:00000030
-rd1D:         0,rd1E:         3
-rd2D:        11,rd2E:         5
+regfile, we3:0, wd3:00000000000000000000000000000000, rf[ 0]:         0, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         0,rf[7]:         3
+alu_dec, alucontrol:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:0, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+alu_dec, alucontrol:000
+regfile, we3:1, wd3:00000000000000000000000000000000, rf[ 0]:         0, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         0,rf[7]:         3
+alu_dec, alucontrol:111
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:111
+controller, funct:101010,aluop:10,alucontrolD:111
+alu_dec, alucontrol:111
 alu_dec, alucontrol:010
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000030, instr: 00853820, instr[25:21]: 00100, instr[20:16]: 00101, rd1D:          0, rd1E:          3, alu_srcB:          5, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:        11,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:        11,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000034,pc_branchM:000080d4, jump:0,pc_jump:0214e080, pc_next_jump:00000034
-datapath, pc_branch:0000e0b0, pc_plus4E:        44, imm_sl2:     57472
-rsD: 4, rtD: 5, rsE: 7, rtE: 2, writeregE: 4, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000030,instr:00853820,instrD:00853820
-pc_plus4:00000034,pc_plus4D:00000030
-rd1D:         0,rd1E:         3
-rd2D:        11,rd2E:         5
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000030, instr: 00853820, instr[25:21]: 00100, instr[20:16]: 00101, rd1D:          0, rd1E:          3, alu_srcB:          5, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:        11,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:        11,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000034,pc_branchM:000080d4, jump:0,pc_jump:0214e080, pc_next_jump:00000034
-datapath, pc_branch:0000e0b0, pc_plus4E:        44, imm_sl2:     57472
-rsD: 4, rtD: 5, rsE: 7, rtE: 2, writeregE: 4, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000030,instr:00e23822,instrD:00853820
-pc_plus4:00000034,pc_plus4D:00000030
-rd1D:         0,rd1E:         3
-rd2D:        11,rd2E:         5
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00100, regwrite: 1, pc: 00000030, instr: 00853820, instr[25:21]: 00100, instr[20:16]: 00101, rd1D:          0, rd1E:          3, alu_srcB:          5, alucontrol:111, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:        11,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:        11,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000034,pc_branchM:000080d4, jump:0,pc_jump:0214e080, pc_next_jump:00000034
-datapath, pc_branch:0000e0b0, pc_plus4E:        44, imm_sl2:     57472
-rsD: 4, rtD: 5, rsE: 7, rtE: 2, writeregE: 4, writeregM: 0, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000030,instr:00e23822,instrD:00853820
-pc_plus4:00000034,pc_plus4D:00000030
-rd1D:         0,rd1E:         3
-rd2D:        11,rd2E:         5
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:0, alucontrolE:010
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:010
 controller, funct:100000,aluop:10,alucontrolD:010
 alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000034, instr: 00e23822, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:         11, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         1, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000034,pc_branchM:0000e0b0, jump:0,pc_jump:0388e088, pc_next_jump:00000034
-datapath, pc_branch:0000e0b4, pc_plus4E:        48, imm_sl2:     57472
-rsD: 7, rtD: 2, rsE: 4, rtE: 5, writeregE: 7, writeregM: 4, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000034,instr:00e23822,instrD:00e23822
-pc_plus4:00000038,pc_plus4D:00000034
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:        11
 mips,data_ram_wea:0,alu_result:         1, mem_wdata:         5
-regfile, we3:1, wd3:00000000000000000000000000000000, rf[ 0]:         0, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         0,rf[7]:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000034, instr: 00e23822, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:         11, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         1, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000038,pc_branchM:0000e0b0, jump:0,pc_jump:0388e088, pc_next_jump:00000038
-datapath, pc_branch:0000e0bc, pc_plus4E:        48, imm_sl2:     57480
-rsD: 7, rtD: 2, rsE: 4, rtE: 5, writeregE: 7, writeregM: 4, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000034,instr:00e23822,instrD:00e23822
-pc_plus4:00000038,pc_plus4D:00000034
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:        11
 alu_dec, alucontrol:110
 data_ram_wea: 0, alu_result:          1, mem_wdata: 00000000000000000000000000000101
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000034, instr: 00e23822, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:         11, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         1, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000038,pc_branchM:0000e0b0, jump:0,pc_jump:0388e088, pc_next_jump:00000038
-datapath, pc_branch:0000e0bc, pc_plus4E:        48, imm_sl2:     57480
-rsD: 7, rtD: 2, rsE: 4, rtE: 5, writeregE: 7, writeregM: 4, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000034,instr:00e23822,instrD:00e23822
-pc_plus4:00000038,pc_plus4D:00000034
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:        11
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         1, mem_wdata:         5
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000034, instr: 00e23822, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:         11, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         1, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000038,pc_branchM:0000e0b0, jump:0,pc_jump:0388e088, pc_next_jump:00000038
-datapath, pc_branch:0000e0bc, pc_plus4E:        48, imm_sl2:     57480
-rsD: 7, rtD: 2, rsE: 4, rtE: 5, writeregE: 7, writeregM: 4, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000034,instr:ac670044,instrD:00e23822
-pc_plus4:00000038,pc_plus4D:00000034
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:        11
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000034, instr: 00e23822, instr[25:21]: 00111, instr[20:16]: 00010, rd1D:          3, rd1E:          0, alu_srcB:         11, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         3,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         1, eql1:         3,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000038,pc_branchM:0000e0b0, jump:0,pc_jump:0388e088, pc_next_jump:00000038
-datapath, pc_branch:0000e0bc, pc_plus4E:        48, imm_sl2:     57480
-rsD: 7, rtD: 2, rsE: 4, rtE: 5, writeregE: 7, writeregM: 4, writeregW: 0,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000034,instr:ac670044,instrD:00e23822
-pc_plus4:00000038,pc_plus4D:00000034
-rd1D:         3,rd1E:         0
-rd2D:         5,rd2E:        11
 mips,data_ram_wea:0,alu_result:         1, mem_wdata:         5
 controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:110
 controller, funct:100010,aluop:10,alucontrolD:110
 alu_dec, alucontrol:110
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000038, instr: ac670044, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:         12, rd1E:          3, alu_srcB:          5, alucontrol:110, alu_result:         1,memtorg:0, wd3:         1
-datapath, rd1D:        12,forwardAD:0,rd2D:         3,forwardBD:0,alu_resultM:        12, eql1:        12,eql2:         3,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000038,pc_branchM:0000e0bc, jump:0,pc_jump:019c0110, pc_next_jump:00000038
-datapath, pc_branch:0000e0c0, pc_plus4E:        52, imm_sl2:     57480
-rsD: 3, rtD: 7, rsE: 7, rtE: 2, writeregE: 7, writeregM: 7, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000038,instr:ac670044,instrD:ac670044
-pc_plus4:0000003c,pc_plus4D:00000038
-rd1D:        12,rd1E:         3
-rd2D:         3,rd2E:         5
 mips,data_ram_wea:0,alu_result:        12, mem_wdata:        11
 regfile, we3:1, wd3:00000000000000000000000000000001, rf[ 4]:         1, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         1,rf[7]:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000038, instr: ac670044, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:         12, rd1E:          3, alu_srcB:          5, alucontrol:110, alu_result:         1,memtorg:0, wd3:         1
-datapath, rd1D:        12,forwardAD:0,rd2D:         3,forwardBD:0,alu_resultM:        12, eql1:        12,eql2:         3,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000003c,pc_branchM:0000e0bc, jump:0,pc_jump:019c0110, pc_next_jump:0000003c
-datapath, pc_branch:00000148, pc_plus4E:        52, imm_sl2:       272
-rsD: 3, rtD: 7, rsE: 7, rtE: 2, writeregE: 7, writeregM: 7, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000038,instr:ac670044,instrD:ac670044
-pc_plus4:0000003c,pc_plus4D:00000038
-rd1D:        12,rd1E:         3
-rd2D:         3,rd2E:         5
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000038, instr: ac670044, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:         12, rd1E:          3, alu_srcB:          5, alucontrol:110, alu_result:         1,memtorg:0, wd3:         1
-datapath, rd1D:        12,forwardAD:0,rd2D:         3,forwardBD:1,alu_resultM:        12, eql1:        12,eql2:        12,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000003c,pc_branchM:0000e0bc, jump:0,pc_jump:019c0110, pc_next_jump:0000003c
-datapath, pc_branch:00000148, pc_plus4E:        52, imm_sl2:       272
-rsD: 3, rtD: 7, rsE: 7, rtE: 2, writeregE: 7, writeregM: 7, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000038,instr:ac670044,instrD:ac670044
-pc_plus4:0000003c,pc_plus4D:00000038
-rd1D:        12,rd1E:         3
-rd2D:         3,rd2E:         5
 alu_dec, alucontrol:000
 alu_dec, alucontrol:010
 data_ram_wea: 0, alu_result:         12, mem_wdata: 00000000000000000000000000001011
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000038, instr: ac670044, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:         12, rd1E:          3, alu_srcB:          5, alucontrol:110, alu_result:         1,memtorg:0, wd3:         1
-datapath, rd1D:        12,forwardAD:0,rd2D:         3,forwardBD:1,alu_resultM:        12, eql1:        12,eql2:        12,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000003c,pc_branchM:0000e0bc, jump:0,pc_jump:019c0110, pc_next_jump:0000003c
-datapath, pc_branch:00000148, pc_plus4E:        52, imm_sl2:       272
-rsD: 3, rtD: 7, rsE: 7, rtE: 2, writeregE: 7, writeregM: 7, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000038,instr:ac670044,instrD:ac670044
-pc_plus4:0000003c,pc_plus4D:00000038
-rd1D:        12,rd1E:         3
-rd2D:         3,rd2E:         5
+Simulation Failed
 mips,data_ram_wea:0,alu_result:        12, mem_wdata:        11
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000038, instr: ac670044, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:         12, rd1E:          3, alu_srcB:          5, alucontrol:110, alu_result:         1,memtorg:0, wd3:         1
-datapath, rd1D:        12,forwardAD:0,rd2D:         3,forwardBD:1,alu_resultM:        12, eql1:        12,eql2:        12,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000003c,pc_branchM:0000e0bc, jump:0,pc_jump:019c0110, pc_next_jump:0000003c
-datapath, pc_branch:00000148, pc_plus4E:        52, imm_sl2:       272
-rsD: 3, rtD: 7, rsE: 7, rtE: 2, writeregE: 7, writeregM: 7, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000038,instr:8c020050,instrD:ac670044
-pc_plus4:0000003c,pc_plus4D:00000038
-rd1D:        12,rd1E:         3
-rd2D:         3,rd2E:         5
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 1, pc: 00000038, instr: ac670044, instr[25:21]: 00011, instr[20:16]: 00111, rd1D:         12, rd1E:          3, alu_srcB:          5, alucontrol:110, alu_result:         1,memtorg:0, wd3:         1
-datapath, rd1D:        12,forwardAD:0,rd2D:         3,forwardBD:1,alu_resultM:        12, eql1:        12,eql2:        12,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000003c,pc_branchM:0000e0bc, jump:0,pc_jump:019c0110, pc_next_jump:0000003c
-datapath, pc_branch:00000148, pc_plus4E:        52, imm_sl2:       272
-rsD: 3, rtD: 7, rsE: 7, rtE: 2, writeregE: 7, writeregM: 7, writeregW: 4,
-regwriteE:1, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000038,instr:8c020050,instrD:ac670044
-pc_plus4:0000003c,pc_plus4D:00000038
-rd1D:        12,rd1E:         3
-rd2D:         3,rd2E:         5
 mips,data_ram_wea:0,alu_result:        12, mem_wdata:        11
 controller,regwriteD:0,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:010
 controller, funct:000100,aluop:00,alucontrolD:010
 alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 0000003c, instr: 8c020050, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:         12, alu_srcB:         68, alucontrol:010, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:         0,forwardAD:0,rd2D:         5,forwardBD:1,alu_resultM:         7, eql1:         0,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000003c,pc_branchM:00000148, jump:0,pc_jump:00080140, pc_next_jump:0000003c
-datapath, pc_branch:0000014c, pc_plus4E:        56, imm_sl2:       272
-rsD: 0, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 7, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000003c,instr:8c020050,instrD:8c020050
-pc_plus4:00000040,pc_plus4D:0000003c
-rd1D:         0,rd1E:        12
-rd2D:         5,rd2E:         3
 mips,data_ram_wea:0,alu_result:         7, mem_wdata:         5
 regfile, we3:1, wd3:00000000000000000000000000001100, rf[ 7]:        12, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         1,rf[7]:        12
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 0000003c, instr: 8c020050, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:         12, alu_srcB:         68, alucontrol:010, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:         0,forwardAD:0,rd2D:         5,forwardBD:1,alu_resultM:         7, eql1:         0,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000040,pc_branchM:00000148, jump:0,pc_jump:00080140, pc_next_jump:00000040
-datapath, pc_branch:0000017c, pc_plus4E:        56, imm_sl2:       320
-rsD: 0, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 7, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000003c,instr:8c020050,instrD:8c020050
-pc_plus4:00000040,pc_plus4D:0000003c
-rd1D:         0,rd1E:        12
-rd2D:         5,rd2E:         3
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 0000003c, instr: 8c020050, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:         12, alu_srcB:         68, alucontrol:010, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:         0,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         7, eql1:         0,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000040,pc_branchM:00000148, jump:0,pc_jump:00080140, pc_next_jump:00000040
-datapath, pc_branch:0000017c, pc_plus4E:        56, imm_sl2:       320
-rsD: 0, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 7, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000003c,instr:8c020050,instrD:8c020050
-pc_plus4:00000040,pc_plus4D:0000003c
-rd1D:         0,rd1E:        12
-rd2D:         5,rd2E:         3
 data_ram_wea: 0, alu_result:          7, mem_wdata: 00000000000000000000000000000101
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 0000003c, instr: 8c020050, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:         12, alu_srcB:         68, alucontrol:010, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:         0,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         7, eql1:         0,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000040,pc_branchM:00000148, jump:0,pc_jump:00080140, pc_next_jump:00000040
-datapath, pc_branch:0000017c, pc_plus4E:        56, imm_sl2:       320
-rsD: 0, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 7, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000003c,instr:8c020050,instrD:8c020050
-pc_plus4:00000040,pc_plus4D:0000003c
-rd1D:         0,rd1E:        12
-rd2D:         5,rd2E:         3
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         7, mem_wdata:         5
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 0000003c, instr: 8c020050, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:         12, alu_srcB:         68, alucontrol:010, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:         0,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         7, eql1:         0,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000040,pc_branchM:00000148, jump:0,pc_jump:00080140, pc_next_jump:00000040
-datapath, pc_branch:0000017c, pc_plus4E:        56, imm_sl2:       320
-rsD: 0, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 7, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000003c,instr:08000011,instrD:8c020050
-pc_plus4:00000040,pc_plus4D:0000003c
-rd1D:         0,rd1E:        12
-rd2D:         5,rd2E:         3
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00111, regwrite: 0, pc: 0000003c, instr: 8c020050, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:         12, alu_srcB:         68, alucontrol:010, alu_result:        12,memtorg:0, wd3:        12
-datapath, rd1D:         0,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         7, eql1:         0,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000040,pc_branchM:00000148, jump:0,pc_jump:00080140, pc_next_jump:00000040
-datapath, pc_branch:0000017c, pc_plus4E:        56, imm_sl2:       320
-rsD: 0, rtD: 2, rsE: 3, rtE: 7, writeregE: 7, writeregM: 7, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:0000003c,instr:08000011,instrD:8c020050
-pc_plus4:00000040,pc_plus4D:0000003c
-rd1D:         0,rd1E:        12
-rd2D:         5,rd2E:         3
 mips,data_ram_wea:0,alu_result:         7, mem_wdata:         5
 controller,regwriteD:1,regwriteE:0,regwriteM:1,regwriteW:1, alucontrolE:010
 controller, funct:010000,aluop:00,alucontrolD:010
 alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000040, instr: 08000011, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         80, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000040,pc_branchM:0000017c, jump:0,pc_jump:00000044, pc_next_jump:00000040
-datapath, pc_branch:00000180, pc_plus4E:        60, imm_sl2:       320
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 7, writeregW: 7,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:1, branchD:0
-~stallF:1,pc:00000040,instr:08000011,instrD:08000011
-pc_plus4:00000044,pc_plus4D:00000040
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         5
 mips,data_ram_wea:1,alu_result:        80, mem_wdata:         7
+hazard,lwstall:1,branch_stall:0
 regfile, we3:1, wd3:00000000000000000000000000000111, rf[ 7]:         7, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         1,rf[7]:         7
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000040, instr: 08000011, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         80, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000044,pc_branchM:0000017c, jump:0,pc_jump:00000044, pc_next_jump:00000044
-datapath, pc_branch:00000084, pc_plus4E:        60, imm_sl2:        68
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 7, writeregW: 7,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:1, branchD:0
-~stallF:1,pc:00000040,instr:08000011,instrD:08000011
-pc_plus4:00000044,pc_plus4D:00000040
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         5
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000040, instr: 08000011, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         80, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000044,pc_branchM:0000017c, jump:1,pc_jump:00000044, pc_next_jump:00000044
-datapath, pc_branch:00000084, pc_plus4E:        60, imm_sl2:        68
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 7, writeregW: 7,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:1, branchD:0
-~stallF:1,pc:00000040,instr:08000011,instrD:08000011
-pc_plus4:00000044,pc_plus4D:00000040
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         5
 data_ram_wea: 1, alu_result:         80, mem_wdata: 00000000000000000000000000000111
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000040, instr: 08000011, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         80, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000044,pc_branchM:0000017c, jump:1,pc_jump:00000044, pc_next_jump:00000044
-datapath, pc_branch:00000084, pc_plus4E:        60, imm_sl2:        68
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 7, writeregW: 7,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:1, branchD:0
-~stallF:1,pc:00000040,instr:08000011,instrD:08000011
-pc_plus4:00000044,pc_plus4D:00000040
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         5
 mips,data_ram_wea:1,alu_result:        80, mem_wdata:         7
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000040, instr: 08000011, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         80, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000044,pc_branchM:0000017c, jump:1,pc_jump:00000044, pc_next_jump:00000044
-datapath, pc_branch:00000084, pc_plus4E:        60, imm_sl2:        68
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 7, writeregW: 7,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:1, branchD:0
-~stallF:1,pc:00000040,instr:20020001,instrD:08000011
-pc_plus4:00000044,pc_plus4D:00000040
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         5
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 1, pc: 00000040, instr: 08000011, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         80, alucontrol:010, alu_result:         7,memtorg:0, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000044,pc_branchM:0000017c, jump:1,pc_jump:00000044, pc_next_jump:00000044
-datapath, pc_branch:00000084, pc_plus4E:        60, imm_sl2:        68
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 7, writeregW: 7,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:1, branchD:0
-~stallF:1,pc:00000040,instr:20020001,instrD:08000011
-pc_plus4:00000044,pc_plus4D:00000040
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         5
 mips,data_ram_wea:1,alu_result:        80, mem_wdata:         7
-controller,regwriteD:0,regwriteE:1,regwriteM:0,regwriteW:1, alucontrolE:010
-controller, funct:010001,aluop:00,alucontrolD:010
-alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000044, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:0, wd3:        80
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000044,pc_branchM:00000084, jump:1,pc_jump:00000000, pc_next_jump:00000044
-datapath, pc_branch:00000088, pc_plus4E:        64, imm_sl2:        68
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 2, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000044,instr:20020001,instrD:00000000
-pc_plus4:00000048,pc_plus4D:00000044
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-mips,data_ram_wea:0,alu_result:        80, mem_wdata:         5
-regfile, we3:0, wd3:00000000000000000000000001010000, rf[ 7]:         7, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         1,rf[7]:         7
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000044, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:0, wd3:        80
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000048,pc_branchM:00000084, jump:1,pc_jump:00000000, pc_next_jump:00000000
-datapath, pc_branch:00000044, pc_plus4E:        64, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 2, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000044,instr:20020001,instrD:00000000
-pc_plus4:00000048,pc_plus4D:00000044
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000044, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:0, wd3:        80
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000048,pc_branchM:00000084, jump:0,pc_jump:00000000, pc_next_jump:00000048
-datapath, pc_branch:00000044, pc_plus4E:        64, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 2, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000044,instr:20020001,instrD:00000000
-pc_plus4:00000048,pc_plus4D:00000044
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-data_ram_wea: 0, alu_result:         80, mem_wdata: 00000000000000000000000000000101
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000044, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:0, wd3:        80
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000048,pc_branchM:00000084, jump:0,pc_jump:00000000, pc_next_jump:00000048
-datapath, pc_branch:00000044, pc_plus4E:        64, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 2, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000044,instr:20020001,instrD:00000000
-pc_plus4:00000048,pc_plus4D:00000044
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-mips,data_ram_wea:0,alu_result:        80, mem_wdata:         5
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000044, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:0, wd3:        80
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000048,pc_branchM:00000084, jump:0,pc_jump:00000000, pc_next_jump:00000048
-datapath, pc_branch:00000044, pc_plus4E:        64, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 2, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000044,instr:ac020054,instrD:00000000
-pc_plus4:00000048,pc_plus4D:00000044
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 0, pc: 00000044, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:0, wd3:        80
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        80, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000048,pc_branchM:00000084, jump:0,pc_jump:00000000, pc_next_jump:00000048
-datapath, pc_branch:00000044, pc_plus4E:        64, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 2, writeregW: 7,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:00000044,instr:ac020054,instrD:00000000
-pc_plus4:00000048,pc_plus4D:00000044
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-mips,data_ram_wea:0,alu_result:        80, mem_wdata:         5
-controller,regwriteD:1,regwriteE:0,regwriteM:1,regwriteW:0, alucontrolE:010
-controller, funct:000001,aluop:00,alucontrolD:010
-alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000048, instr: ac020054, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:1, wd3:        80
-datapath, rd1D:         0,forwardAD:0,rd2D:         5,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         5,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000048,pc_branchM:00000044, jump:0,pc_jump:00080150, pc_next_jump:00000048
-datapath, pc_branch:00000048, pc_plus4E:        68, imm_sl2:         0
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 2,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000048,instr:ac020054,instrD:ac020054
-pc_plus4:0000004c,pc_plus4D:00000048
-rd1D:         0,rd1E:         0
-rd2D:         5,rd2E:         0
-mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-regfile, we3:1, wd3:00000000000000000000000001010000, rf[ 2]:        80, rf[5]:        11, rf[2]:        80, rf[3]:        12,rf[4]:         1,rf[7]:         7
-regfile, we3:1, wd3:00000000000000000000000000000111, rf[ 2]:         7, rf[5]:        11, rf[2]:         7, rf[3]:        12,rf[4]:         1,rf[7]:         7
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000048, instr: ac020054, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:1, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:        80,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:        80,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000004c,pc_branchM:00000044, jump:0,pc_jump:00080150, pc_next_jump:0000004c
-datapath, pc_branch:00000198, pc_plus4E:        68, imm_sl2:       336
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 2,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000048,instr:ac020054,instrD:ac020054
-pc_plus4:0000004c,pc_plus4D:00000048
-rd1D:         0,rd1E:         0
-rd2D:        80,rd2E:         0
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000048, instr: ac020054, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:1, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000004c,pc_branchM:00000044, jump:0,pc_jump:00080150, pc_next_jump:0000004c
-datapath, pc_branch:00000198, pc_plus4E:        68, imm_sl2:       336
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 2,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000048,instr:ac020054,instrD:ac020054
-pc_plus4:0000004c,pc_plus4D:00000048
-rd1D:         0,rd1E:         0
-rd2D:         7,rd2E:         0
-data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000048, instr: ac020054, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:1, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000004c,pc_branchM:00000044, jump:0,pc_jump:00080150, pc_next_jump:0000004c
-datapath, pc_branch:00000198, pc_plus4E:        68, imm_sl2:       336
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 2,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000048,instr:ac020054,instrD:ac020054
-pc_plus4:0000004c,pc_plus4D:00000048
-rd1D:         0,rd1E:         0
-rd2D:         7,rd2E:         0
-mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000048, instr: ac020054, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:1, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000004c,pc_branchM:00000044, jump:0,pc_jump:00080150, pc_next_jump:0000004c
-datapath, pc_branch:00000198, pc_plus4E:        68, imm_sl2:       336
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 2,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000048,instr:00000000,instrD:ac020054
-pc_plus4:0000004c,pc_plus4D:00000048
-rd1D:         0,rd1E:         0
-rd2D:         7,rd2E:         0
-clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000048, instr: ac020054, instr[25:21]: 00000, instr[20:16]: 00010, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:010, alu_result:        80,memtorg:1, wd3:         7
-datapath, rd1D:         0,forwardAD:0,rd2D:         7,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000004c,pc_branchM:00000044, jump:0,pc_jump:00080150, pc_next_jump:0000004c
-datapath, pc_branch:00000198, pc_plus4E:        68, imm_sl2:       336
-rsD: 0, rtD: 2, rsE: 0, rtE: 0, writeregE: 0, writeregM: 0, writeregW: 2,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000048,instr:00000000,instrD:ac020054
-pc_plus4:0000004c,pc_plus4D:00000048
-rd1D:         0,rd1E:         0
-rd2D:         7,rd2E:         0
-mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 controller,regwriteD:0,regwriteE:1,regwriteM:0,regwriteW:1, alucontrolE:010
 controller, funct:010100,aluop:00,alucontrolD:010
+mips,data_ram_wea:0,alu_result:        80, mem_wdata:         5
+regfile, we3:0, wd3:00000000000000000000000001010000, rf[ 7]:         7, rf[5]:        11, rf[2]:         5, rf[3]:        12,rf[4]:         1,rf[7]:         7
+hazard,lwstall:0,branch_stall:0
+data_ram_wea: 0, alu_result:         80, mem_wdata: 00000000000000000000000000000101
+mips,data_ram_wea:0,alu_result:        80, mem_wdata:         5
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:        80, mem_wdata:         5
+controller,regwriteD:0,regwriteE:0,regwriteM:1,regwriteW:0, alucontrolE:010
+controller, funct:010100,aluop:00,alucontrolD:010
 alu_dec, alucontrol:010
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 0, pc: 0000004c, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         84, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         7,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:0000004c,pc_branchM:00000198, jump:0,pc_jump:00000000, pc_next_jump:0000004c
-datapath, pc_branch:0000019c, pc_plus4E:        72, imm_sl2:       336
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 0, writeregW: 0,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:0000004c,instr:00000000,instrD:00000000
-pc_plus4:00000050,pc_plus4D:0000004c
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         7
-regfile, we3:0, wd3:00000000000000000000000000000000, rf[ 0]:         0, rf[5]:        11, rf[2]:         7, rf[3]:        12,rf[4]:         1,rf[7]:         7
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 0, pc: 0000004c, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         84, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000050,pc_branchM:00000198, jump:0,pc_jump:00000000, pc_next_jump:00000050
-datapath, pc_branch:0000004c, pc_plus4E:        72, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 0, writeregW: 0,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:0000004c,instr:00000000,instrD:00000000
-pc_plus4:00000050,pc_plus4D:0000004c
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         7
+mips,data_ram_wea:1,alu_result:         0, mem_wdata:         0
+regfile, we3:1, wd3:00000000000000000000000001010000, rf[ 2]:        80, rf[5]:        11, rf[2]:        80, rf[3]:        12,rf[4]:         1,rf[7]:         7
+regfile, we3:1, wd3:00000000000000000000000000000111, rf[ 2]:         7, rf[5]:        11, rf[2]:         7, rf[3]:        12,rf[4]:         1,rf[7]:         7
 alu_dec, alucontrol:010
 alu_dec, alucontrol:000
+data_ram_wea: 1, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:1,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:1,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:0,regwriteM:0,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+mips,data_ram_wea:1,alu_result:        84, mem_wdata:         7
+regfile, we3:0, wd3:00000000000000000000000000000000, rf[ 0]:         0, rf[5]:        11, rf[2]:         7, rf[3]:        12,rf[4]:         1,rf[7]:         7
+data_ram_wea: 1, alu_result:         84, mem_wdata: 00000000000000000000000000000111
+OK!*N
+mips,data_ram_wea:1,alu_result:        84, mem_wdata:         7
+clka:1---------------------------------------
+mips,data_ram_wea:1,alu_result:        84, mem_wdata:         7
+controller,regwriteD:1,regwriteE:1,regwriteM:0,regwriteW:0, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+regfile, we3:0, wd3:00000000000000000000000001010100, rf[ 2]:         7, rf[5]:        11, rf[2]:         7, rf[3]:        12,rf[4]:         1,rf[7]:         7
 data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
-clka:0 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 0, pc: 0000004c, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         84, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000050,pc_branchM:00000198, jump:0,pc_jump:00000000, pc_next_jump:00000050
-datapath, pc_branch:0000004c, pc_plus4E:        72, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 0, writeregW: 0,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:0000004c,instr:00000000,instrD:00000000
-pc_plus4:00000050,pc_plus4D:0000004c
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         7
+Simulation Failed
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
 clka:1---------------------------------------
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00010, regwrite: 0, pc: 0000004c, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:         84, alucontrol:010, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:         0, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000050,pc_branchM:00000198, jump:0,pc_jump:00000000, pc_next_jump:00000050
-datapath, pc_branch:0000004c, pc_plus4E:        72, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 2, writeregE: 2, writeregM: 0, writeregW: 0,
-regwriteE:0, regwriteM:1, regwriteW:0, memtoregE:0, branchD:0
-~stallF:1,pc:0000004c,instr:00000000,instrD:00000000
-pc_plus4:00000050,pc_plus4D:0000004c
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         7
 mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
-controller,regwriteD:1,regwriteE:0,regwriteM:1,regwriteW:0, alucontrolE:000
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:0, alucontrolE:000
 controller, funct:000000,aluop:10,alucontrolD:000
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000050, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        84, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000050,pc_branchM:0000004c, jump:0,pc_jump:00000000, pc_next_jump:00000050
-datapath, pc_branch:00000050, pc_plus4E:        76, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 2, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000050,instr:00000000,instrD:00000000
-pc_plus4:00000054,pc_plus4D:00000050
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-mips,data_ram_wea:1,alu_result:        84, mem_wdata:         7
 regfile, we3:1, wd3:00000000000000000000000000000000, rf[ 0]:         0, rf[5]:        11, rf[2]:         7, rf[3]:        12,rf[4]:         1,rf[7]:         7
-clka:1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-datapath, write2reg£º00000, regwrite: 1, pc: 00000050, instr: 00000000, instr[25:21]: 00000, instr[20:16]: 00000, rd1D:          0, rd1E:          0, alu_srcB:          0, alucontrol:000, alu_result:         0,memtorg:0, wd3:         0
-datapath, rd1D:         0,forwardAD:0,rd2D:         0,forwardBD:0,alu_resultM:        84, eql1:         0,eql2:         0,branch:0,pcsrc:0
-datapath, pcsrc:0, pc_next:00000054,pc_branchM:0000004c, jump:0,pc_jump:00000000, pc_next_jump:00000054
-datapath, pc_branch:00000050, pc_plus4E:        76, imm_sl2:         0
-rsD: 0, rtD: 0, rsE: 0, rtE: 0, writeregE: 0, writeregM: 2, writeregW: 0,
-regwriteE:1, regwriteM:0, regwriteW:1, memtoregE:0, branchD:0
-~stallF:1,pc:00000050,instr:00000000,instrD:00000000
-pc_plus4:00000054,pc_plus4D:00000050
-rd1D:         0,rd1E:         0
-rd2D:         0,rd2E:         0
-data_ram_wea: 1, alu_result:         84, mem_wdata: 00000000000000000000000000000111
-Simulation succeeded
-$stop called at time : 630 ns : File "C:/Users/94582/Documents/GitHub/CPU/Lab_04.srcs/sim_1/new/testbench.v" Line 78
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000
+data_ram_wea: 0, alu_result:          0, mem_wdata: 00000000000000000000000000000000
+Simulation Failed
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+clka:1---------------------------------------
+mips,data_ram_wea:0,alu_result:         0, mem_wdata:         0
+controller,regwriteD:1,regwriteE:1,regwriteM:1,regwriteW:1, alucontrolE:000
+controller, funct:000000,aluop:10,alucontrolD:000

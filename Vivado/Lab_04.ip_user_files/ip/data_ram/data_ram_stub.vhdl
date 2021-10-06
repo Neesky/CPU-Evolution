@@ -1,9 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Fri Jun  4 17:17:54 2021
--- Host        : DESKTOP-ACRHNEE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub E:/vivado/Lab_03/Lab_03.srcs/sources_1/ip/data_ram/data_ram_stub.vhdl
+-- Date        : Tue Oct  5 17:18:26 2021
+-- Host        : DESKTOP-L0IVESM running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               C:/Users/94582/Documents/GitHub/CPU/Vivado/Lab_04.srcs/sources_1/ip/data_ram/data_ram_stub.vhdl
 -- Design      : data_ram
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcsg325-1

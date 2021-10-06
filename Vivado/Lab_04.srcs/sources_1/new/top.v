@@ -51,7 +51,7 @@ mips mips1(
 inst_ram inst_ram (
   .clka(~clka),    // input wire clka
   .ena(inst_ram_ena),      // input wire ena
-  .wea(4'b0000),      // input wire [3 : 0] wea
+  .wea(0),      // input wire [3 : 0] wea
   .addra(pc[9:2]),  // input wire [7 : 0] addra
   .dina(32'b0),    // input wire [31 : 0] dina
   .douta(instr)  // output wire [31 : 0] douta
@@ -61,7 +61,7 @@ inst_ram inst_ram (
 data_ram data_ram (
   .clka(~clka),    // input wire clka
   .ena(data_ram_ena),      // input wire ena
-  .wea({data_ram_wea,data_ram_wea,data_ram_wea,data_ram_wea}),      // input wire [3 : 0] wea, wea = 4'b1 when write
+  .wea(data_ram_wea),      // input wire [3 : 0] wea, wea = 4'b1 when write
 //  .addra(alu_result[9:0]),  // input wire [9 : 0] addra
   .addra(alu_result[11:2]),
   .dina(mem_wdata),    // input wire [31 : 0] dina
