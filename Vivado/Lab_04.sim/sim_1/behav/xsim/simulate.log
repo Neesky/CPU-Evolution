@@ -2010,4 +2010,4 @@ rd1D:         0,rd1E:         0
 rd2D:         0,rd2E:         0
 data_ram_wea: 1, alu_result:         84, mem_wdata: 00000000000000000000000000000111
 Simulation succeeded
-$stop called at time : 630 ns : File "C:/Users/94582/Documents/GitHub/CPU/Lab_04.srcs/sim_1/new/testbench.v" Line 78
+$stop called at time : 630 ns : File "C:/Users/94582/Documents/GitHub/CPU/Vivado/Lab_04.srcs/sim_1/new/testbench.v" Line 78
