@@ -41,7 +41,7 @@ wire branchD = branch;
 wire branchE,branchM;
 wire [31:0] pcF,pcD,pcE,pcM;
 assign pcF = pc;
-wire actual_takeM = zero & branchE ;
+wire actual_takeM = zeroM & branchM ;
 wire pred_takeD,pred_takeE,pred_takeM;
 
 mux2 #(32) mux_pc1(

@@ -51,7 +51,7 @@ assign branch_stall = branchD & regwriteE &((writeregE == rsD) |  (writeregE == 
 assign stallF = lwstall ;
 assign stallD = lwstall ;
 assign flushE = lwstall | (branchM & (actual_takeM!=pred_takeM));
-assign flushM = 1'b0;
+assign flushM = (branchM & (actual_takeM!=pred_takeM));
 always @(*) begin
     $display("hazard,lwstall:%b,branch_stall:%b",lwstall, branch_stall);
 end
