@@ -25,7 +25,7 @@ module hazard(
     input wire regwriteE, regwriteM, regwriteW, memtoregE,memtoregM, branchD,branchM,actual_takeM,pred_takeM,pred_takeD,
     output wire [1:0] forwardAE, forwardBE,
     output wire forwardAD, forwardBD,
-    output wire stallF, stallD, flushE,flushD,flushF
+    output wire stallF, stallD, flushE,flushD,flushF,flushM
     );
 
 assign flushD = (branchM & (actual_takeM!=pred_takeM))|pred_takeD;
@@ -51,7 +51,7 @@ assign branch_stall = branchD & regwriteE &((writeregE == rsD) |  (writeregE == 
 assign stallF = lwstall ;
 assign stallD = lwstall ;
 assign flushE = lwstall | (branchM & (actual_takeM!=pred_takeM));
-
+assign flushM = 1'b0;
 always @(*) begin
     $display("hazard,lwstall:%b,branch_stall:%b",lwstall, branch_stall);
 end
