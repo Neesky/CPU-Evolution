@@ -42,6 +42,7 @@ wire branchE,branchM;
 wire [31:0] pcF,pcD,pcE,pcM;
 assign pcF = pc;
 wire actual_takeM = zeroM & branchM ;
+wire actual_takeE = zero & branchE ;
 wire pred_takeD,pred_takeE,pred_takeM;
 
 mux2 #(32) mux_pc1(
@@ -52,9 +53,9 @@ mux2 #(32) mux_pc1(
     );
 
 mux2 #(32) mux_pc2(
-    .a(pred_takeM ? pc_plus4M:pc_branchM ),
+    .a(pred_takeE ? pc_plus4E:pc_branchE ),
     .b(pc_nextbr),
-    .s(branchM & (pred_takeM != actual_takeM)), //pcsrc
+    .s(branchE & (pred_takeE != actual_takeE)), //pcsrc
     .y(pc_next)
     );
     
@@ -448,9 +449,9 @@ hazard hazard(
     .flushD(flushD),
     .flushF(flushF),
     .flushM(flushM),
-    .actual_takeM(actual_takeM),
-    .branchM(branchM),
-    .pred_takeM(pred_takeM),
+    .actual_takeE(actual_takeE),
+    .branchE(branchE),
+    .pred_takeE(pred_takeE),
     .pred_takeD(pred_takeD)
 );
     
