@@ -22,13 +22,13 @@
 
 module hazard(
     input wire [4:0] rsD, rtD, rsE, rtE, writeregE, writeregM, writeregW,
-    input wire regwriteE, regwriteM, regwriteW, memtoregE,memtoregM, branchD,branchM,actual_takeM,pred_takeM,pred_takeD,
+    input wire regwriteE, regwriteM, regwriteW, memtoregE,memtoregM, branchD,branchM,actual_takeM,pred_takeM,pred_takeD,jump,
     output wire [1:0] forwardAE, forwardBE,
     output wire forwardAD, forwardBD,
     output wire stallF, stallD, flushE,flushD,flushF,flushM
     );
 
-assign flushD = (branchM & (actual_takeM!=pred_takeM))|pred_takeD;
+assign flushD = (branchM & (actual_takeM!=pred_takeM))| pred_takeD | jump;
 assign flushF = (branchM & (actual_takeM!=pred_takeM));
 
 

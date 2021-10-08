@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="231230000fs"></ZoomStartTime>
-      <ZoomEndTime time="795230001fs"></ZoomEndTime>
-      <Cursor1Time time="277000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="530284000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="165"></NameColumnWidth>
-      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+      <ValueColumnWidth column_width="85"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="30" />
    <wvobject fp_name="/testbench/clka" type="logic">
       <obj_property name="ElementShortName">clka</obj_property>
       <obj_property name="ObjectShortName">clka</obj_property>
@@ -48,6 +48,62 @@
       <obj_property name="ElementShortName">instr[31:0]</obj_property>
       <obj_property name="ObjectShortName">instr[31:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/instrD" type="array">
+      <obj_property name="ElementShortName">instrD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instrD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/flushD" type="logic">
+      <obj_property name="ElementShortName">flushD</obj_property>
+      <obj_property name="ObjectShortName">flushD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/flushE" type="logic">
+      <obj_property name="ElementShortName">flushE</obj_property>
+      <obj_property name="ObjectShortName">flushE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/flushF" type="logic">
+      <obj_property name="ElementShortName">flushF</obj_property>
+      <obj_property name="ObjectShortName">flushF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/flushM" type="logic">
+      <obj_property name="ElementShortName">flushM</obj_property>
+      <obj_property name="ObjectShortName">flushM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/branchD" type="logic">
+      <obj_property name="ElementShortName">branchD</obj_property>
+      <obj_property name="ObjectShortName">branchD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/branchE" type="logic">
+      <obj_property name="ElementShortName">branchE</obj_property>
+      <obj_property name="ObjectShortName">branchE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/branchM" type="logic">
+      <obj_property name="ElementShortName">branchM</obj_property>
+      <obj_property name="ObjectShortName">branchM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pred_takeD" type="logic">
+      <obj_property name="ElementShortName">pred_takeD</obj_property>
+      <obj_property name="ObjectShortName">pred_takeD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pred_takeE" type="logic">
+      <obj_property name="ElementShortName">pred_takeE</obj_property>
+      <obj_property name="ObjectShortName">pred_takeE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/actual_takeM" type="logic">
+      <obj_property name="ElementShortName">actual_takeM</obj_property>
+      <obj_property name="ObjectShortName">actual_takeM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pred_takeM" type="logic">
+      <obj_property name="ElementShortName">pred_takeM</obj_property>
+      <obj_property name="ObjectShortName">pred_takeM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_next_jump" type="array">
+      <obj_property name="ElementShortName">pc_next_jump[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_next_jump[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/jump" type="logic">
+      <obj_property name="ElementShortName">jump</obj_property>
+      <obj_property name="ObjectShortName">jump</obj_property>
+   </wvobject>
    <wvobject fp_name="/testbench/alu_result" type="array">
       <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
       <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
@@ -75,5 +131,13 @@
    <wvobject fp_name="/testbench/rd" type="array">
       <obj_property name="ElementShortName">rd[4:0]</obj_property>
       <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/jump" type="logic">
+      <obj_property name="ElementShortName">jump</obj_property>
+      <obj_property name="ObjectShortName">jump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_next_jump" type="array">
+      <obj_property name="ElementShortName">pc_next_jump[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_next_jump[31:0]</obj_property>
    </wvobject>
 </wave_config>

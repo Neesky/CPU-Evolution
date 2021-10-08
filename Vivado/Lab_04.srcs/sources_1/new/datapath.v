@@ -436,6 +436,7 @@ hazard hazard(
     .regwriteW(regwriteW),
     .memtoregE(memtoregE),
     .memtoregM(memtoregM),
+    .jump(jump),
     .branchD(branchD),
     .forwardAE(forwardAE), 
     .forwardBE(forwardBE),
