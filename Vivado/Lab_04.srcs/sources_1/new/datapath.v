@@ -22,19 +22,19 @@
 
 module datapath(
     input wire clka,rst, branch, memtoregM,branchF,
-    input wire [31:0] instr, mem_rdata,
+    input wire [31:0] instr, mem_rdata,instrF,
     output wire zeroM, stallD,flushD,
     output wire [31:0] pc, alu_resultM, writedataM,
     
     input wire jump, alusrc, memtoregE, memtoregW, regwriteE, regwriteM, regwriteW, regdst,
     input wire [2:0] alucontrol
     );
-wire [31:0] pc_plus4, rd1D, rd2D, imm_extend, pc_next,pc_nextbr, pc_next_jump, instr_sl2;
-wire [31:0] alu_srcB, wd3, imm_sl2, pc_branchD, pc_branchE,pc_branchM;
+wire [31:0] pc_plus4, rd1D, rd2D, pc_next,pc_nextbr, pc_next_jump, instr_sl2;
+wire [31:0] alu_srcB, wd3, imm_sl2,pc_branchF, pc_branchD, pc_branchE,pc_branchM;
 wire [4:0] write2regE, write2regM, write2regW;
 wire [31:0] rd1, rd2, writedataE;
 wire stallF, stallE, flushE ,flushF,flushM;
-wire [31:0] instrD, rd1E, rd2E,pc_plus4D, pc_plus4E, pc_plus4M, imm_extendE, alu_result, alu_resultW, mem_rdataW;
+wire [31:0] instrD, rd1E, rd2E,pc_plus4D, pc_plus4E, pc_plus4M, imm_extendF, imm_extendD,imm_extendE, alu_result, alu_resultW, mem_rdataW;
 wire [4:0] rsD, rtD, rdD, rsE, rtE, rdE, rtM, rdM, rtW, rdW;
 wire zero;
 wire branchD = branch;
@@ -47,7 +47,7 @@ wire pred_takeF,pred_takeD,pred_takeE,pred_takeM;
 wire [1:0] forwardAE, forwardBE;
 wire forwardAD, forwardBD;
 mux2 #(32) mux_pc1(
-    .a(pc_branchD),
+    .a(pc_branchF),
     .b(pc_plus4),
     .s(pred_takeF & branchF), //pcsrc
     .y(pc_nextbr)
@@ -100,6 +100,14 @@ floprc #(32) r1D(
     .d(instr),
     .q(instrD)
     );
+ floprc #(32) imm_extend_D(
+    .clk(clka), 
+    .rst(rst),
+    .en(~stallD), 
+    .clear(flushD),
+    .d(imm_extendF),
+    .q(imm_extendD)
+    );
  floprc #(1) predD(
     .clk(clka), 
     .rst(rst),
@@ -134,12 +142,19 @@ floprc #(1) branch_D(
     .d(branchF),
     .q(branchD)
     );
-
+floprc #(32) pc_branch_D(
+    .clk(clka), 
+    .rst(rst),
+    .en(~stallD), 
+    .clear(flushD),
+    .d(pc_branchF),
+    .q(pc_branchD)
+    );
 
     //imm extend
 sign_extend sign_extend1(
-    .a(instrD[15:0]),
-    .y(imm_extend)
+    .a(instr[15:0]),
+    .y(imm_extendF)
     );
     
 
@@ -211,7 +226,7 @@ floprc #(32) r9E(
     .rst(rst), 
     .en(1'b1), 
     .clear(flushE),
-    .d(imm_extend),
+    .d(imm_extendD),
     .q(imm_extendE)
     );
 
@@ -286,15 +301,15 @@ alu_always alu(
     
     //left shift 2 for pc_brranch imm
 sl2 sl2_imm(
-    .a(imm_extend),
+    .a(imm_extendF),
     .y(imm_sl2)
     );
     
     //pc_branch = pc + 4 + (sign_ext imm << 2)
 adder pc_branch1(
-    .a(pc_plus4D), 
+    .a(pc_plus4), 
     .b(imm_sl2),
-    .y(pc_branchD)
+    .y(pc_branchF)
     );
 
 floprc #(32) writedata_M(
