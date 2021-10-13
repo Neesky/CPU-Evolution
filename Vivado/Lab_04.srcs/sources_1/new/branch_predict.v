@@ -75,6 +75,12 @@ module branch_predict (
         if(rst) begin
             GHT <= 6'b0;
             end
+        else 
+        
+        if(branchE && (actual_takeE!=pred_takeE)) begin
+            GHT <= GHT_re<<1 +  actual_takeE;
+        end
+        
         else if(branchF) begin
             if(pred_takeF) begin
                 GHT <= GHT<<1 + 1'b1;
