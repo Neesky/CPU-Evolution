@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="596000001fs"></ZoomEndTime>
-      <Cursor1Time time="220000000fs"></Cursor1Time>
+      <ZoomEndTime time="1241869920fs"></ZoomEndTime>
+      <Cursor1Time time="274390000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="153"></NameColumnWidth>
+      <NameColumnWidth column_width="138"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="50" />
+   <WVObjectSize size="29" />
    <wvobject fp_name="/testbench/clka" type="logic">
       <obj_property name="ElementShortName">clka</obj_property>
       <obj_property name="ObjectShortName">clka</obj_property>
@@ -108,120 +108,36 @@
       <obj_property name="ElementShortName">pc_next_jump[31:0]</obj_property>
       <obj_property name="ObjectShortName">pc_next_jump[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/PHT[6]" type="array">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">[6][1:0]</obj_property>
-      <obj_property name="ObjectShortName">[6][1:0]</obj_property>
-      <obj_property name="label">PHT[6][1:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/PHT[8]" type="array">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">[8][1:0]</obj_property>
       <obj_property name="ObjectShortName">[8][1:0]</obj_property>
       <obj_property name="label">PHT[8][1:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/PHT[6]" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[6][1:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][1:0]</obj_property>
+      <obj_property name="label">PHT[6][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/PHT_re[8]" type="array">
+      <obj_property name="ElementShortName">[8][1:0]</obj_property>
+      <obj_property name="ObjectShortName">[8][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/PHT_re[6]" type="array">
+      <obj_property name="ElementShortName">[6][1:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][1:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/PHT" type="array">
       <obj_property name="ElementShortName">PHT[63:0][1:0]</obj_property>
       <obj_property name="ObjectShortName">PHT[63:0][1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/pred_takeF" type="logic">
-      <obj_property name="ElementShortName">pred_takeF</obj_property>
-      <obj_property name="ObjectShortName">pred_takeF</obj_property>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/PHT_re" type="array">
+      <obj_property name="ElementShortName">PHT_re[63:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">PHT_re[63:0][1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_branchF" type="array">
-      <obj_property name="ElementShortName">pc_branchF[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_branchF[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/imm_extendF" type="array">
-      <obj_property name="ElementShortName">imm_extendF[31:0]</obj_property>
-      <obj_property name="ObjectShortName">imm_extendF[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/imm_sl2" type="array">
-      <obj_property name="ElementShortName">imm_sl2[31:0]</obj_property>
-      <obj_property name="ObjectShortName">imm_sl2[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pred_takeF" type="logic">
-      <obj_property name="ElementShortName">pred_takeF</obj_property>
-      <obj_property name="ObjectShortName">pred_takeF</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/jump" type="logic">
-      <obj_property name="ElementShortName">jump</obj_property>
-      <obj_property name="ObjectShortName">jump</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_next_jump" type="array">
-      <obj_property name="ElementShortName">pc_next_jump[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_next_jump[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_next" type="array">
-      <obj_property name="ElementShortName">pc_next[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_next[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_plus4E" type="array">
-      <obj_property name="ElementShortName">pc_plus4E[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_plus4E[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_branchE" type="array">
-      <obj_property name="ElementShortName">pc_branchE[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_branchE[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_branchD" type="array">
-      <obj_property name="ElementShortName">pc_branchD[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_branchD[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_branchF" type="array">
-      <obj_property name="ElementShortName">pc_branchF[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_branchF[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_nextbr" type="array">
-      <obj_property name="ElementShortName">pc_nextbr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">pc_nextbr[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pred_takeE" type="logic">
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/pred_takeE" type="logic">
       <obj_property name="ElementShortName">pred_takeE</obj_property>
       <obj_property name="ObjectShortName">pred_takeE</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/actual_takeE" type="logic">
-      <obj_property name="ElementShortName">actual_takeE</obj_property>
-      <obj_property name="ObjectShortName">actual_takeE</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/zero" type="logic">
-      <obj_property name="ElementShortName">zero</obj_property>
-      <obj_property name="ObjectShortName">zero</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/zeroM" type="logic">
-      <obj_property name="ElementShortName">zeroM</obj_property>
-      <obj_property name="ObjectShortName">zeroM</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/alu_result" type="array">
-      <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/rd1" type="array">
-      <obj_property name="ElementShortName">rd1[31:0]</obj_property>
-      <obj_property name="ObjectShortName">rd1[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/alu_srcB" type="array">
-      <obj_property name="ElementShortName">alu_srcB[31:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_srcB[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/alucontrol" type="array">
-      <obj_property name="ElementShortName">alucontrol[2:0]</obj_property>
-      <obj_property name="ObjectShortName">alucontrol[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/alusrc" type="logic">
-      <obj_property name="ElementShortName">alusrc</obj_property>
-      <obj_property name="ObjectShortName">alusrc</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/imm_extendE" type="array">
-      <obj_property name="ElementShortName">imm_extendE[31:0]</obj_property>
-      <obj_property name="ObjectShortName">imm_extendE[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/imm_extendD" type="array">
-      <obj_property name="ElementShortName">imm_extendD[31:0]</obj_property>
-      <obj_property name="ObjectShortName">imm_extendD[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/testbench/testtop1/mips1/datapath/imm_extendF" type="array">
-      <obj_property name="ElementShortName">imm_extendF[31:0]</obj_property>
-      <obj_property name="ObjectShortName">imm_extendF[31:0]</obj_property>
    </wvobject>
 </wave_config>

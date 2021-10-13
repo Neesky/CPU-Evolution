@@ -485,7 +485,7 @@ branch_predict bp(
     .stallD(stallD),
     .pcF(pcF),
     .pcE(pcE),
-
+    .pred_takeE(pred_takeE),
 
     .branchE(branchE),         // M阶段是否是分支指令
     .actual_takeE(actual_takeE),    // 实际是否跳转
