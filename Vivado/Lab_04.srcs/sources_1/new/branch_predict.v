@@ -27,10 +27,10 @@ module branch_predict (
     input wire stallD,
 
     input wire [31:0] pcF,
-    input wire [31:0] pcM,
+    input wire [31:0] pcE,
 
-    input wire branchM,         // M阶段是否是分支指令
-    input wire actual_takeM,    // 实际是否跳转
+    input wire branchE,         // M阶段是否是分支指令
+    input wire actual_takeE,    // 实际是否跳转
 
     input wire branchD,        // 译码阶段是否是跳转指令   
     output wire pred_takeD      // 预测是否跳转
@@ -80,7 +80,7 @@ module branch_predict (
     wire [(BHT_DEPTH-1):0] update_BHT_index;
     wire [(PHT_DEPTH-1):0] update_BHR_value;
 
-    assign update_BHT_index = pcM[11:2];     
+    assign update_BHT_index = pcE[11:2];     
     assign update_BHR_value = BHT[update_BHT_index];  
     assign update_PHT_index = update_BHR_value;
 
@@ -90,8 +90,8 @@ module branch_predict (
                 BHT[j] <= 0;
             end
         end
-        else if(branchM) begin
-            if(actual_takeM) begin
+        else if(branchE) begin
+            if(actual_takeE) begin
                  BHT[update_BHT_index] = BHT[update_BHT_index]<<1 + 1'b1;
             end
             else begin
@@ -110,11 +110,12 @@ module branch_predict (
             end
         end
         else begin
+        if(branchE)
             case(PHT[update_PHT_index])
-	Strongly_not_taken: PHT[update_PHT_index] =  (actual_takeM?Weakly_not_taken:Strongly_not_taken);
-	Weakly_not_taken:  PHT[update_PHT_index] =  (actual_takeM?Weakly_taken:Strongly_not_taken);
-	Weakly_taken: PHT[update_PHT_index] =  (actual_takeM?Strongly_taken:Weakly_not_taken);
-	Strongly_taken: PHT[update_PHT_index] =  (actual_takeM?Strongly_taken:Weakly_taken);
+	Strongly_not_taken: PHT[update_PHT_index] =  (actual_takeE?Weakly_not_taken:Strongly_not_taken);
+	Weakly_not_taken:  PHT[update_PHT_index] =  (actual_takeE?Weakly_taken:Strongly_not_taken);
+	Weakly_taken: PHT[update_PHT_index] =  (actual_takeE?Strongly_taken:Weakly_not_taken);
+	Strongly_taken: PHT[update_PHT_index] =  (actual_takeE?Strongly_taken:Weakly_taken);
             endcase 
         end
     end
