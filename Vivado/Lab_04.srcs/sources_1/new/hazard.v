@@ -28,7 +28,7 @@ module hazard(
     output wire stallF, stallD, flushE,flushD,flushF,flushM
     );
 
-assign flushD = (branchE & (actual_takeE!=pred_takeE))| pred_takeD | jump;
+assign flushD = (branchE & (actual_takeE!=pred_takeE)) | jump;
 assign flushF = (branchE & (actual_takeE!=pred_takeE));
 
 

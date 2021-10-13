@@ -21,7 +21,7 @@
 
 
 module datapath(
-    input wire clka,rst, branch, memtoregM,
+    input wire clka,rst, branch, memtoregM,branchF,
     input wire [31:0] instr, mem_rdata,
     output wire zeroM, stallD,flushD,
     output wire [31:0] pc, alu_resultM, writedataM,
@@ -30,7 +30,7 @@ module datapath(
     input wire [2:0] alucontrol
     );
 wire [31:0] pc_plus4, rd1D, rd2D, imm_extend, pc_next,pc_nextbr, pc_next_jump, instr_sl2;
-wire [31:0] mem_rdata, alu_srcB, wd3, imm_sl2, pc_branchD, pc_branchE,pc_branchM;
+wire [31:0] alu_srcB, wd3, imm_sl2, pc_branchD, pc_branchE,pc_branchM;
 wire [4:0] write2regE, write2regM, write2regW;
 wire [31:0] rd1, rd2, writedataE;
 wire stallF, stallE, flushE ,flushF,flushM;
@@ -43,12 +43,13 @@ wire [31:0] pcF,pcD,pcE,pcM;
 assign pcF = pc;
 wire actual_takeM = zeroM & branchM ;
 wire actual_takeE = zero & branchE ;
-wire pred_takeD,pred_takeE,pred_takeM;
-
+wire pred_takeF,pred_takeD,pred_takeE,pred_takeM;
+wire [1:0] forwardAE, forwardBE;
+wire forwardAD, forwardBD;
 mux2 #(32) mux_pc1(
     .a(pc_branchD),
     .b(pc_plus4),
-    .s(pred_takeD & branchD), //pcsrc
+    .s(pred_takeF & branchF), //pcsrc
     .y(pc_nextbr)
     );
 
@@ -98,6 +99,14 @@ floprc #(32) r1D(
     .clear(flushD),
     .d(instr),
     .q(instrD)
+    );
+ floprc #(1) predD(
+    .clk(clka), 
+    .rst(rst),
+    .en(~stallD), 
+    .clear(flushD),
+    .d(pred_takeF),
+    .q(pred_takeD)
     );
     
 floprc #(32) r2D(
@@ -262,7 +271,7 @@ mux2 #(32) mux_alu_srcb(
     .s(alusrc), //alusrc
     .y(alu_srcB)
     );
-    
+wire overflow;
     //alu
 alu_always alu(
     .clk(clka),
@@ -273,7 +282,7 @@ alu_always alu(
     .overflow(overflow),
     .zero(zero)
     );
-    wire overflow;
+
     
     //left shift 2 for pc_brranch imm
 sl2 sl2_imm(
@@ -421,8 +430,7 @@ mux2 #(32) mux_wd3(
     
 
 
-wire [1:0] forwardAE, forwardBE;
-wire forwardAD, forwardBD;
+
 // hazard
 hazard hazard(
     .rsD(rsD), 
@@ -467,8 +475,8 @@ branch_predict bp(
     .branchE(branchE),         // M阶段是否是分支指令
     .actual_takeE(actual_takeE),    // 实际是否跳转
 
-    .branchD(branchD),        // 译码阶段是否是跳转指令   
-    .pred_takeD(pred_takeD)      // 预测是否跳转
+    .branchF(branchF),        // 译码阶段是否是跳转指令   
+    .pred_takeF(pred_takeF)      // 预测是否跳转
 
 );
     

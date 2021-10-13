@@ -32,11 +32,9 @@ module branch_predict (
     input wire branchE,         // M阶段是否是分支指令
     input wire actual_takeE,    // 实际是否跳转
 
-    input wire branchD,        // 译码阶段是否是跳转指令   
-    output wire pred_takeD      // 预测是否跳转
+    input wire branchF,        // 译码阶段是否是跳转指令   
+    output wire pred_takeF      // 预测是否跳转
 );
-    wire pred_takeF;
-    reg pred_takeF_r;
    
 
 // 定义参数
@@ -59,17 +57,9 @@ module branch_predict (
     assign BHR_value = BHT[BHT_index];  
     assign PHT_index = BHR_value;
 
-    assign pred_takeF = PHT[PHT_index][1];      // 在取指阶段预测是否会跳转，并经过流水线传递给译码阶段。
+    assign pred_takeF = PHT[PHT_index][1] & branchF;      // 在取指阶段预测是否会跳转，并经过流水线传递给译码阶段。
 
         // --------------------------pipeline------------------------------
-            always @(posedge clk) begin
-                if(rst | flushD) begin
-                    pred_takeF_r <= 0;
-                end
-                else if(~stallD) begin
-                    pred_takeF_r <= pred_takeF;
-                end
-            end
         // --------------------------pipeline------------------------------
 
 // ---------------------------------------预测逻辑---------------------------------------
@@ -121,6 +111,5 @@ module branch_predict (
     end
 // ---------------------------------------PHT初始化以及更新---------------------------------------
 
-    // 译码阶段输出最终的预测结果
-    assign pred_takeD = branchD & pred_takeF_r;  
+
 endmodule

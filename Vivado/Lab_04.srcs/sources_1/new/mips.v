@@ -42,14 +42,15 @@ floprc #(32) sigs_D(
     .d(instr),
     .q(instrD)
     );
-wire branch;
-
+wire branch,branchF;
+assign branchF = instr[31:26]==6'b000100;
 controller c(clka, instrD[31:26],instrD[5:0],zero,memtoregE,memtoregM,memtoregW,
     data_ram_wea,alusrc,regdst,regwriteE,regwriteM, regwriteW,jump,data_ram_ena, alucontrol, branch);
     
 datapath datapath(
     .clka(clka),
     .rst(rst),
+    .branchF(branchF),
     .branch(branch),
     .memtoregM(memtoregM),
     .instr(instr),
