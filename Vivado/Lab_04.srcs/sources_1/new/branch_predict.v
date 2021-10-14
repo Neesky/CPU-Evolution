@@ -33,7 +33,8 @@ module branch_predict (
     input wire actual_takeE,    // 实际是否跳转
 
     input wire branchD,        // 译码阶段是否是跳转指令   
-    output wire pred_takeF      // 预测是否跳转
+    output wire pred_takeF,      // 预测是否跳转
+    output wire GHT
 ); 
 
 

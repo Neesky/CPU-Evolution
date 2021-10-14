@@ -478,6 +478,43 @@ hazard hazard(
     .pred_takeD(pred_takeD)
 );
     
+wire Gpred_takeF,Gpred_takeD,Gpred_takeE;
+wire Lpred_takeF,Lpred_takeD,Lpred_takeE;
+wire GHT;
+
+
+floprc #(1) Gpred_take_D(
+    .clk(clka), 
+    .rst(rst),
+    .en(~stallD), 
+    .clear(flushD),
+    .d(Gpred_takeF),
+    .q(Gpred_takeD)
+    );
+floprc #(1) Gpred_take_E(
+    .clk(clka), 
+    .rst(rst), 
+    .en(1'b1), 
+    .clear(flushE),
+    .d(Gpred_takeD),
+    .q(Gpred_takeE)
+    );
+floprc #(1) Lpred_take_D(
+    .clk(clka), 
+    .rst(rst),
+    .en(~stallD), 
+    .clear(flushD),
+    .d(Lpred_takeF),
+    .q(Lpred_takeD)
+    );
+floprc #(1) Lpred_take_E(
+    .clk(clka), 
+    .rst(rst), 
+    .en(1'b1), 
+    .clear(flushE),
+    .d(Lpred_takeD),
+    .q(Lpred_takeE)
+    );
 branch_predict bp(
     .clk(clka),
     .rst(rst),
@@ -485,17 +522,46 @@ branch_predict bp(
     .stallD(stallD),
     .pcF(pcF),
     .pcE(pcE),
-    .pred_takeE(pred_takeE),
+    .pred_takeE(Gpred_takeE),
 
     .branchE(branchE),         // M阶段是否是分支指令
     .actual_takeE(actual_takeE),    // 实际是否跳转
 
     .branchF(branchF),        // 译码阶段是否是跳转指令   
-    .pred_takeF(pred_takeF)      // 预测是否跳转
+    .pred_takeF(Gpred_takeF),      // 预测是否跳转
+    .GHT(GHT)
+);
+Lbranch_predict bpL(
+    .clk(clka),
+    .rst(rst),
+    .flushD(flushD),
+    .stallD(stallD),
+    .pcF(pcF),
+    .pcE(pcE),
+
+
+    .branchE(branchE),         // M阶段是否是分支指令
+    .actual_takeE(actual_takeE),    // 实际是否跳转
+
+    .branchF(branchF),        // 译码阶段是否是跳转指令   
+    .pred_takeF(Lpred_takeF)      // 预测是否跳转
 
 );
-    
-    
+
+Choiceprediction cp(
+    .clk(clka),
+    .rst(rst),
+    .pcF(pcF),
+    .GHT(GHT),
+    .Lpred_take(Lpred_takeF),
+    .Gpred_take(Gpred_takeF),
+    .branchE(branchE),
+    .branchF(branchF),
+    .LcorrectE(Lpred_takeE==actual_takeE),
+    .GcorrectE(Gpred_takeE==actual_takeE),
+    .pred_takeF(pred_takeF)
+); 
+
 //    always @(*) begin
 //        $display("clka:%b $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$",clka);
 //        $display("datapath, write2reg：%b, regwrite: %d, pc: %h, instr: %h, instr[25:21]: %b, instr[20:16]: %b, rd1D: %d, rd1E: %d, alu_srcB: %d, alucontrol:%b, alu_result:%d,memtorg:%b, wd3:%d",write2regE, regwriteE, pc, instrD, instrD[25:21], instrD[20:16], rd1D, rd1E, alu_srcB, alucontrol, alu_resultW, memtoregW, wd3);

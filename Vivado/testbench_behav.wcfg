@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1241869920fs"></ZoomEndTime>
-      <Cursor1Time time="274390000fs"></Cursor1Time>
+      <ZoomEndTime time="1262000001fs"></ZoomEndTime>
+      <Cursor1Time time="420000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="138"></NameColumnWidth>
+      <NameColumnWidth column_width="118"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="29" />
+   <WVObjectSize size="41" />
    <wvobject fp_name="/testbench/clka" type="logic">
       <obj_property name="ElementShortName">clka</obj_property>
       <obj_property name="ObjectShortName">clka</obj_property>
@@ -139,5 +139,54 @@
    <wvobject fp_name="/testbench/testtop1/mips1/datapath/bp/pred_takeE" type="logic">
       <obj_property name="ElementShortName">pred_takeE</obj_property>
       <obj_property name="ObjectShortName">pred_takeE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/GHT" type="logic">
+      <obj_property name="ElementShortName">GHT</obj_property>
+      <obj_property name="ObjectShortName">GHT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_nextbr" type="array">
+      <obj_property name="ElementShortName">pc_nextbr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_nextbr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_branchF" type="array">
+      <obj_property name="ElementShortName">pc_branchF[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_branchF[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pc_plus4" type="array">
+      <obj_property name="ElementShortName">pc_plus4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_plus4[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/pred_takeF" type="logic">
+      <obj_property name="ElementShortName">pred_takeF</obj_property>
+      <obj_property name="ObjectShortName">pred_takeF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/Lpred_takeF" type="logic">
+      <obj_property name="ElementShortName">Lpred_takeF</obj_property>
+      <obj_property name="ObjectShortName">Lpred_takeF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/Gpred_takeF" type="logic">
+      <obj_property name="ElementShortName">Gpred_takeF</obj_property>
+      <obj_property name="ObjectShortName">Gpred_takeF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/cp/PHT" type="array">
+      <obj_property name="ElementShortName">PHT[63:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">PHT[63:0][1:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/cp/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/cp/GcorrectE" type="logic">
+      <obj_property name="ElementShortName">GcorrectE</obj_property>
+      <obj_property name="ObjectShortName">GcorrectE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/cp/LcorrectE" type="logic">
+      <obj_property name="ElementShortName">LcorrectE</obj_property>
+      <obj_property name="ObjectShortName">LcorrectE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testbench/testtop1/mips1/datapath/cp/branchE" type="logic">
+      <obj_property name="ElementShortName">branchE</obj_property>
+      <obj_property name="ObjectShortName">branchE</obj_property>
    </wvobject>
 </wave_config>
