@@ -26,12 +26,11 @@ module d_cache (
     localparam CACHE_DEEPTH = 1 << INDEX_WIDTH;
     
     //Cache存储单元
-    reg [1:0]             cache_addr  [CACHE_DEEPTH - 1 : 0];
-    reg [OFFSET_WIDTH-1:0]cache_size  [CACHE_DEEPTH - 1 : 0];
-    reg                   cache_dirty [CACHE_DEEPTH - 1 : 0];
-    reg                   cache_valid [CACHE_DEEPTH - 1 : 0];
-    reg [TAG_WIDTH-1:0]   cache_tag   [CACHE_DEEPTH - 1 : 0];
-    reg [31:0]            cache_block [CACHE_DEEPTH - 1 : 0];
+    reg                   cache_last  [CACHE_DEEPTH - 1 : 0][1:0];
+    reg                   cache_dirty [CACHE_DEEPTH - 1 : 0][1:0];
+    reg                   cache_valid [CACHE_DEEPTH - 1 : 0][1:0];
+    reg [TAG_WIDTH-1:0]   cache_tag   [CACHE_DEEPTH - 1 : 0][1:0];
+    reg [31:0]            cache_block [CACHE_DEEPTH - 1 : 0][1:0];
 
     //访问地址分解
     wire [OFFSET_WIDTH-1:0] offset;
@@ -43,19 +42,21 @@ module d_cache (
     assign tag = cpu_data_addr[31 : INDEX_WIDTH + OFFSET_WIDTH];
 
     //访问Cache line
-    wire c_dirty;
-    wire c_valid;
-    wire [TAG_WIDTH-1:0] c_tag;
-    wire [31:0] c_block;
+    wire c_last[1:0];
+    wire c_dirty[1:0];
+    wire c_valid[1:0];
+    wire [TAG_WIDTH-1:0] c_tag[1:0];
+    wire [31:0] c_block[1:0];
     
-    assign c_dirty = cache_dirty[index];
-    assign c_valid = cache_valid[index];
-    assign c_tag   = cache_tag  [index];
-    assign c_block = cache_block[index];
+    assign c_last[0]  = cache_last [index][0],c_last[1]  = cache_last [index][1];
+    assign c_dirty[0] = cache_dirty[index][0],c_dirty[1] = cache_dirty[index][1];
+    assign c_valid[0] = cache_valid[index][0],c_valid[1] = cache_valid[index][1];
+    assign c_tag[0]   = cache_tag  [index][0],c_tag[1]   = cache_tag  [index][1];
+    assign c_block[0] = cache_block[index][0],c_block[1] = cache_block[index][1];
 
     //判断是否命中
     wire hit, miss;
-    assign hit = c_valid & (c_tag == tag);  //cache line的valid位为1，且tag与地址中tag相等
+    assign hit = c_valid[0] & (c_tag[0] == tag) | c_valid[1] & (c_tag[1] == tag);  //cache line的valid位为1，且tag与地址中tag相等
     assign miss = ~hit;
 
     //读或写
@@ -63,6 +64,8 @@ module d_cache (
     assign write = cpu_data_wr;
     assign read = ~write;
 
+    wire choose = hit ?(c_valid[0] & (c_tag[0] == tag) ? 0: 1) :                  //选hit的->选没被用的->选上一个不是的
+                       (~c_valid[0] ? 0 : (~c_valid[1] ? 1: (~c_last[0] ?0:1)));            
     //FSM
     parameter IDLE = 2'b00, RM = 2'b01, WM = 2'b11;
     reg [1:0] state;
@@ -72,8 +75,8 @@ module d_cache (
         end
         else begin
             case(state)
-                IDLE:   state <= cpu_data_req & read & miss &  ~c_dirty ? RM :
-                                 cpu_data_req & miss &  c_dirty         ? WM : IDLE;
+                IDLE:   state <= cpu_data_req & read & miss &  ~c_dirty[choose] ? RM :
+                                 cpu_data_req & miss &  c_dirty[choose]         ? WM : IDLE;
                 RM:     state <= cache_data_data_ok ? IDLE : RM;
                 WM:     state <= cache_data_data_ok ? (read ? RM : IDLE): WM ;
             endcase
@@ -106,7 +109,7 @@ module d_cache (
     assign write_finish = write & cache_data_data_ok;
 
     //output to mips core
-    assign cpu_data_rdata   = hit ? c_block : cache_data_rdata;
+    assign cpu_data_rdata   = hit ? c_block[choose] : cache_data_rdata;
     assign cpu_data_addr_ok = cpu_data_req & hit | (read & state == RM | write & state == WM) & cache_data_req & cache_data_addr_ok;
     assign cpu_data_data_ok = cpu_data_req & hit | (read & state == RM | write & state == WM) & cache_data_data_ok;
 
@@ -114,11 +117,12 @@ module d_cache (
     assign cache_data_req   = read_req & ~addr_rcv | write_req & ~waddr_rcv;
     assign cache_data_wr    = state == WM ?1'b1 : 1'b0;
     assign cache_data_size  = cpu_data_size;
-    assign cache_data_addr  = state == WM ?{c_tag,index,2'b00}:cpu_data_addr;
-    assign cache_data_wdata = state == WM ?c_block:cpu_data_wdata;
+    assign cache_data_addr  = state == WM ?{c_tag[choose],index,2'b00}:cpu_data_addr;
+    assign cache_data_wdata = state == WM ?c_block[choose]:cpu_data_wdata;
 
     //写入Cache
     //保存地址中的tag, index，防止addr发生改变
+    reg                 choose_save;
     reg [TAG_WIDTH-1:0] tag_save;
     reg [31:0]write_cache_data_save;
     reg [INDEX_WIDTH-1:0] index_save;
@@ -129,6 +133,8 @@ module d_cache (
                       cpu_data_req ? index : index_save;
         write_cache_data_save <= rst ? 0 :
                       cpu_data_req ? write_cache_data : write_cache_data_save;
+        choose_save <= rst ? 0 :
+                      cpu_data_req ? choose : choose_save;
     end
 
     wire [31:0] write_cache_data;
@@ -143,52 +149,53 @@ module d_cache (
     //掩码的使用：位为1的代表需要更新的。
     //位拓展：{8{1'b1}} -> 8'b11111111
     //new_data = old_data & ~mask | write_data & mask
-    assign write_cache_data = cache_block[index] & ~{{8{write_mask[3]}}, {8{write_mask[2]}}, {8{write_mask[1]}}, {8{write_mask[0]}}} | 
+    assign write_cache_data = cache_block[index][choose] & ~{{8{write_mask[3]}}, {8{write_mask[2]}}, {8{write_mask[1]}}, {8{write_mask[0]}}} | 
                               cpu_data_wdata & {{8{write_mask[3]}}, {8{write_mask[2]}}, {8{write_mask[1]}}, {8{write_mask[0]}}};
 
-    integer t;
+    integer t,p;
     always @(posedge clk) begin
         if(rst) begin
             for(t=0; t<CACHE_DEEPTH; t=t+1) begin   //刚开始将Cache置为无效
-                cache_valid[t] <= 0;
-                cache_dirty[t] <= 0;
+                cache_last[t][0] = 0;
+                cache_last[t][1] = 1;
+                for (p=0;p<2;p=p+1)
+                begin
+                    cache_valid[t][p] <= 0;
+                    cache_dirty[t][p] <= 0;
+                end
             end
         end
         else begin
+            if(cpu_data_req)begin
+                    cache_last [index_save][choose_save] <= 1'b1;    
+                    cache_last [index_save][choose_save^1] <= 1'b0;
+            end
             if(hit) begin
                 if(write) begin
-                    cache_block[index] <= write_cache_data;      //写入Cache line，使用index而不是index_save
-                    cache_dirty[index] <= 1'b1;
+                    cache_block[index][choose] <= write_cache_data;      //写入Cache line，使用index而不是index_save
+                    cache_dirty[index][choose] <= 1'b1;
                 end
             end
             else begin
-                if(write & ~c_dirty) begin
-                    cache_block[index] <= write_cache_data;  
-                    cache_tag  [index] <= tag;
-                    cache_valid[index] <= 1'b1;
-                    cache_dirty[index] <= 1'b1;    
+                if(write & ~c_dirty[choose]) begin
+                    cache_block[index][choose] <= write_cache_data;  
+                    cache_tag  [index][choose] <= tag;
+                    cache_valid[index][choose] <= 1'b1;
+                    cache_dirty[index][choose] <= 1'b1;    
                 end
                 else if(read & state == RM & cache_data_data_ok) begin
-                        cache_block[index_save] <= cache_data_rdata;  
-                        cache_tag  [index_save] <= tag_save;
-                        cache_valid[index_save] <= 1'b1;
-                        cache_dirty[index_save] <= 1'b0; 
+                        cache_block[index_save][choose] <= cache_data_rdata;  
+                        cache_tag  [index_save][choose] <= tag_save;
+                        cache_valid[index_save][choose] <= 1'b1;
+                        cache_dirty[index_save][choose] <= 1'b0; 
                 end
                 else if(write & state == WM & cache_data_data_ok) begin
-                    cache_block[index_save] <= write_cache_data_save;  
-                    cache_tag  [index_save] <= tag_save;
-                    cache_valid[index_save] <= 1'b1;
-                    cache_dirty[index_save] <= 1'b1; 
+                    cache_block[index_save][choose] <= write_cache_data_save;  
+                    cache_tag  [index_save][choose] <= tag_save;
+                    cache_valid[index_save][choose] <= 1'b1;
+                    cache_dirty[index_save][choose] <= 1'b1; 
                 end
             end
-            // if(read_finish) begin //读缺失，访存结束时
-            //     cache_valid[index_save] <= 1'b1;             //将Cache line置为有效
-            //     cache_tag  [index_save] <= tag_save;
-            //     cache_block[index_save] <= cache_data_rdata; //写入Cache line
-            // end
-            // else if(write & cpu_data_req & hit) begin   //写命中时需要写Cache
-            //     cache_block[index] <= write_cache_data;      //写入Cache line，使用index而不是index_save
-            // end
         end
     end
 endmodule
